@@ -2,6 +2,18 @@ language: php
 
 dist: trusty
 
+env:
+  matrix:
+    - DB=mysql DATABASE_TEST_URL='mysql://root@127.0.0.1/test_myapp'
+    - DB=pgsql DATABASE_TEST_URL='postgres://postgres@127.0.0.1/test_myapp'
+    - DB=sqlite DATABASE_TEST_URL='sqlite:///:memory:'
+  global:
+    - DEFAULT=1
+
+services:
+  - postgresql
+  - mysql
+
 sudo: false
 
 php:
@@ -15,6 +27,10 @@ matrix:
   include:
     - php: 7.0
       env: PHPCS=1
+
+before_install:
+  - if [ $DB = 'mysql' ]; then mysql -u root -e 'CREATE DATABASE test_myapp;'; fi
+  - if [ $DB = 'pgsql' ]; then psql -c 'CREATE DATABASE test_myapp;' -U postgres; fi
 
 before_script:
   - if [[ $PHPCS = 1 ]]; then composer require cakephp/cakephp-codesniffer:~2.1; fi
