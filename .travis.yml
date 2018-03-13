@@ -4,7 +4,7 @@ dist: trusty
 
 env:
   matrix:
-    - DB=mysql DATABASE_TEST_URL='mysql://root@127.0.0.1/test_myapp'
+    - DB=mysql DATABASE_TEST_URL='mysql://root:@127.0.0.1/test_myapp'
     - DB=pgsql DATABASE_TEST_URL='postgres://postgres@127.0.0.1/test_myapp'
     - DB=sqlite DATABASE_TEST_URL='sqlite:///:memory:'
   global:
