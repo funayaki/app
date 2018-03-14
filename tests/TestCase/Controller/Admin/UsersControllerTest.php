@@ -27,6 +27,8 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testIndex()
     {
+        $this->session(['Auth.User.id' => 1]);
+
         $this->get('/admin/users');
         $this->assertResponseOk();
     }
@@ -38,6 +40,8 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testView()
     {
+        $this->session(['Auth.User.id' => 1]);
+
         $this->get('/admin/users/view/1');
         $this->assertResponseOk();
     }
@@ -49,6 +53,8 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testAdd()
     {
+        $this->session(['Auth.User.id' => 1]);
+
         $data = [
             'username' => 'Lorem ipsum dolor sit amet',
             'password' => 'Lorem ipsum dolor sit amet',
@@ -70,6 +76,8 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testEdit()
     {
+        $this->session(['Auth.User.id' => 1]);
+
         $data = [
             'username' => 'Lorem ipsum dolor sit amet',
             'password' => 'Lorem ipsum dolor sit amet',
@@ -91,7 +99,29 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testDelete()
     {
+        $this->session(['Auth.User.id' => 1]);
+
         $this->delete('/admin/users/delete/1');
         $this->assertResponseSuccess();
+    }
+
+    /**
+     * Test login method
+     *
+     * @return void
+     */
+    public function testLogin()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test logout method
+     *
+     * @return void
+     */
+    public function testLogout()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
     }
 }

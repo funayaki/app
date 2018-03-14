@@ -112,4 +112,18 @@ class UsersTable extends Table
 
         return $rules;
     }
+
+    /**
+     * @param Query $query
+     * @param array $options
+     * @return Query
+     */
+    public function findAuth(Query $query, array $options)
+    {
+        $query
+            ->select(['id', 'username', 'password'])
+            ->where(['Users.status' => 1]);
+
+        return $query;
+    }
 }

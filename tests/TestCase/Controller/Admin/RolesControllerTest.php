@@ -27,6 +27,8 @@ class RolesControllerTest extends IntegrationTestCase
      */
     public function testIndex()
     {
+        $this->session(['Auth.User.id' => 1]);
+
         $this->get('/admin/roles');
         $this->assertResponseOk();
     }
@@ -38,6 +40,8 @@ class RolesControllerTest extends IntegrationTestCase
      */
     public function testView()
     {
+        $this->session(['Auth.User.id' => 1]);
+
         $this->get('/admin/roles/view/1');
         $this->assertResponseOk();
     }
@@ -49,6 +53,8 @@ class RolesControllerTest extends IntegrationTestCase
      */
     public function testAdd()
     {
+        $this->session(['Auth.User.id' => 1]);
+
         $data = [
             'title' => 'Lorem ipsum dolor sit amet',
             'alias' => 'Lorem ipsum dolor sit amet',
@@ -65,6 +71,8 @@ class RolesControllerTest extends IntegrationTestCase
      */
     public function testEdit()
     {
+        $this->session(['Auth.User.id' => 1]);
+
         $data = [
             'title' => 'Lorem ipsum dolor sit amet',
             'alias' => 'Lorem ipsum dolor sit amet',
@@ -81,6 +89,8 @@ class RolesControllerTest extends IntegrationTestCase
      */
     public function testDelete()
     {
+        $this->session(['Auth.User.id' => 1]);
+
         $this->delete('/admin/roles/delete/1');
         $this->assertResponseSuccess();
     }
