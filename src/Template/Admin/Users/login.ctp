@@ -1,5 +1,9 @@
-<div class="users form">
-    <?= $this->Flash->render() ?>
+<?php
+/**
+ * @var \App\View\AppView $this
+ */
+?>
+<div class="users form large-12 medium-12 columns content">
     <?= $this->Form->create() ?>
     <fieldset>
         <legend><?= __('Please enter your username and password') ?></legend>
