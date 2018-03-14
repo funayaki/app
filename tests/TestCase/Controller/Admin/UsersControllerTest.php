@@ -62,7 +62,7 @@ class UsersControllerTest extends IntegrationTestCase
             'email' => 'Lorem ipsum dolor sit amet',
             'activation_key' => 'Lorem ipsum dolor sit amet',
             'role_id' => 1,
-            'status' => 1,
+            'active' => 1,
         ];
 
         $this->post('/admin/users/add', $data);
@@ -85,7 +85,7 @@ class UsersControllerTest extends IntegrationTestCase
             'email' => 'Lorem ipsum dolor sit amet',
             'activation_key' => 'Lorem ipsum dolor sit amet',
             'role_id' => 1,
-            'status' => 1,
+            'active' => 1,
         ];
 
         $this->post('/admin/users/edit/1', $data);

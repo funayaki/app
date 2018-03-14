@@ -14,7 +14,7 @@ use Cake\ORM\Entity;
  * @property string $email
  * @property string $activation_key
  * @property int $role_id
- * @property bool $status
+ * @property bool $active
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
  *
@@ -39,7 +39,7 @@ class User extends Entity
         'email' => true,
         'activation_key' => true,
         'role_id' => true,
-        'status' => true,
+        'active' => true,
         'created' => true,
         'modified' => true,
         'role' => true

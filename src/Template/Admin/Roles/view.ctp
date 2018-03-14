@@ -65,7 +65,7 @@
                 <td><?= h($users->email) ?></td>
                 <td><?= h($users->activation_key) ?></td>
                 <td><?= h($users->role_id) ?></td>
-                <td><?= h($users->status) ?></td>
+                <td><?= h($users->active) ?></td>
                 <td><?= h($users->created) ?></td>
                 <td><?= h($users->modified) ?></td>
                 <td class="actions">

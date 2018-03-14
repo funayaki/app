@@ -55,8 +55,8 @@
             <td><?= h($user->modified) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Status') ?></th>
-            <td><?= $user->status ? __('Yes') : __('No'); ?></td>
+            <th scope="row"><?= __('Active') ?></th>
+            <td><?= $user->active ? __('Yes') : __('No'); ?></td>
         </tr>
     </table>
 </div>

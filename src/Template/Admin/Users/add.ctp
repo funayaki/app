@@ -23,7 +23,7 @@
             echo $this->Form->control('email');
             echo $this->Form->control('activation_key');
             echo $this->Form->control('role_id', ['options' => $roles]);
-            echo $this->Form->control('status');
+            echo $this->Form->control('active');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

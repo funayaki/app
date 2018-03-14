@@ -90,9 +90,9 @@ class UsersTable extends Table
             ->notEmpty('activation_key');
 
         $validator
-            ->boolean('status')
-            ->requirePresence('status', 'create')
-            ->notEmpty('status');
+            ->boolean('active')
+            ->requirePresence('active', 'create')
+            ->notEmpty('active');
 
         return $validator;
     }
@@ -122,7 +122,7 @@ class UsersTable extends Table
     {
         $query
             ->select(['id', 'username', 'password'])
-            ->where(['Users.status' => 1]);
+            ->where(['Users.active' => 1]);
 
         return $query;
     }
