@@ -27,7 +27,7 @@
             echo $this->Form->control('password');
             echo $this->Form->control('name');
             echo $this->Form->control('email');
-            echo $this->Form->control('activation_key');
+            echo $this->Form->control('token');
             echo $this->Form->control('role_id', ['options' => $roles]);
             echo $this->Form->control('active');
         ?>

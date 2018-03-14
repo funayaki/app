@@ -60,7 +60,7 @@ class UsersControllerTest extends IntegrationTestCase
             'password' => 'Lorem ipsum dolor sit amet',
             'name' => 'Lorem ipsum dolor sit amet',
             'email' => 'Lorem ipsum dolor sit amet',
-            'activation_key' => 'Lorem ipsum dolor sit amet',
+            'token' => 'Lorem ipsum dolor sit amet',
             'role_id' => 1,
             'active' => 1,
         ];
@@ -83,7 +83,7 @@ class UsersControllerTest extends IntegrationTestCase
             'password' => 'Lorem ipsum dolor sit amet',
             'name' => 'Lorem ipsum dolor sit amet',
             'email' => 'Lorem ipsum dolor sit amet',
-            'activation_key' => 'Lorem ipsum dolor sit amet',
+            'token' => 'Lorem ipsum dolor sit amet',
             'role_id' => 1,
             'active' => 1,
         ];
@@ -116,6 +116,24 @@ class UsersControllerTest extends IntegrationTestCase
     }
 
     /**
+     * Test login with invalid password method
+     *
+     * @return void
+     */
+    public function testLoginWithInvalidPassword()
+    {
+        $this->enableRetainFlashMessages();
+
+        $data = [
+            'username' => 'admin',
+            'password' => 'invalid',
+        ];
+
+        $this->post('/admin/users/login', $data);
+        $this->assertSession('Username or password is incorrect', 'Flash.flash.0.message');
+    }
+
+    /**
      * Test logout method
      *
      * @return void
@@ -123,5 +141,96 @@ class UsersControllerTest extends IntegrationTestCase
     public function testLogout()
     {
         $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test forgot method
+     *
+     * @return void
+     */
+    public function testForgot()
+    {
+        $data = [
+            'username' => 'admin',
+        ];
+
+        $this->post('/admin/users/forgot', $data);
+        $this->assertSession('An email has been sent with instructions for resetting your password.', 'Flash.flash.0.message');
+        $this->assertRedirect(['controller' => 'Users', 'action' => 'login']);
+    }
+
+    /**
+     * Test forgot with anon method
+     *
+     * @return void
+     */
+    public function testForgotWithAnon()
+    {
+        $this->enableRetainFlashMessages();
+
+        $data = [
+            'username' => 'anon',
+        ];
+
+        $this->post('/admin/users/forgot', $data);
+        $this->assertSession('Invalid username', 'Flash.flash.0.message');
+    }
+
+    /**
+     * Test reset method
+     *
+     * @return void
+     */
+    public function testReset()
+    {
+        $username = 'admin';
+        $token = 'apple';
+
+        $data = [
+            'password' => 'new_password',
+            'verify_password' => 'new_password',
+        ];
+
+        $this->put(sprintf('/admin/users/reset/%s/%s', $username, $token), $data);
+        $this->assertSession('Your password has been reset successfully.', 'Flash.flash.0.message');
+        $this->assertRedirect(['controller' => 'Users', 'action' => 'login']);
+    }
+
+    /**
+     * Test reset with mismatch password method
+     *
+     * @return void
+     */
+    public function testResetWithMismatchPassword()
+    {
+        $this->enableRetainFlashMessages();
+
+        $username = 'admin';
+        $token = 'apple';
+
+        $data = [
+            'password' => 'new_password',
+            'verify_password' => 'mismatch_password',
+        ];
+
+        $this->put(sprintf('/admin/users/reset/%s/%s', $username, $token), $data);
+        $this->assertSession('Your password could not be saved. Please, try again.', 'Flash.flash.0.message');
+    }
+
+    /**
+     * Test reset with invalid token method
+     *
+     * @return void
+     */
+    public function testResetWithInvalidToken()
+    {
+        $this->enableRetainFlashMessages();
+
+        $username = 'admin';
+        $token = 'invalid_token';
+
+        $this->put(sprintf('/admin/users/reset/%s/%s', $username, $token));
+        $this->assertSession('An error occurred.', 'Flash.flash.0.message');
+        $this->assertRedirect(['controller' => 'Users', 'action' => 'login']);
     }
 }

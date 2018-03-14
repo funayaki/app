@@ -1,9 +1,13 @@
 <?php
 namespace App\Model\Table;
 
+use App\Model\Entity\User;
+use Cake\Core\Configure;
+use Cake\Mailer\MailerAwareTrait;
 use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
+use Cake\Utility\Security;
 use Cake\Validation\Validator;
 
 /**
@@ -23,6 +27,10 @@ use Cake\Validation\Validator;
  */
 class UsersTable extends Table
 {
+    use MailerAwareTrait;
+
+    const INACTIVE_STATUS = 0;
+    const ACTIVE_STATUS = 1;
 
     /**
      * Initialize method
@@ -69,7 +77,8 @@ class UsersTable extends Table
             ->scalar('password')
             ->maxLength('password', 100)
             ->requirePresence('password', 'create')
-            ->notEmpty('password');
+            ->notEmpty('password')
+            ->add('password', 'compareWith', ['rule' => ['compareWith', 'verify_password']]);
 
         $validator
             ->scalar('name')
@@ -84,10 +93,10 @@ class UsersTable extends Table
             ->add('email', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
 
         $validator
-            ->scalar('activation_key')
-            ->maxLength('activation_key', 60)
-            ->requirePresence('activation_key', 'create')
-            ->notEmpty('activation_key');
+            ->scalar('token')
+            ->maxLength('token', 60)
+            ->requirePresence('token', 'create')
+            ->notEmpty('token');
 
         $validator
             ->boolean('active')
@@ -122,8 +131,72 @@ class UsersTable extends Table
     {
         $query
             ->select(['id', 'username', 'password'])
-            ->where(['Users.active' => 1]);
+            ->find('active');
 
         return $query;
+    }
+
+    /**
+     * @param Query $query
+     * @param array $options
+     * @return Query
+     */
+    public function findActive(Query $query, array $options)
+    {
+        $query
+            ->where(['Users.active' => self::ACTIVE_STATUS]);
+
+        return $query;
+    }
+
+    /**
+     * @param Query $query
+     * @param array $options
+     * @return Query
+     */
+    public function findAdmin(Query $query, array $options)
+    {
+        $query
+            ->where(['Users.role_id' => RolesTable::ROLE_ADMIN]);
+
+        return $query;
+    }
+
+    /**
+     * Starts an password reset procedure and sets out an email to the user
+     *
+     * @param User $user User to run the procedure for
+     * @param array $options
+     * @return bool Returns true when successful, false if not
+     */
+    public function resetPassword(User $user, array $options = [])
+    {
+        // Generate a unique token
+        $user->token = $this->generateToken();
+        $user = $this->save($user);
+        if (!$user) {
+            return false;
+        }
+        // Send out an password reset email
+        $email = $this
+            ->getMailer('User')
+            ->viewVars(compact('options'))
+            ->send('resetPassword', [$user]);
+        if (!$email) {
+            return false;
+        }
+        return true;
+    }
+
+    /**
+     * @param null $length
+     * @return string
+     */
+    public function generateToken($length = null)
+    {
+        if (!$length) {
+            $length = Configure::read('Funayaki.tokenLength', 20);
+        }
+        return bin2hex(Security::randomBytes($length));
     }
 }

@@ -35,8 +35,8 @@
             <td><?= h($user->email) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Activation Key') ?></th>
-            <td><?= h($user->activation_key) ?></td>
+            <th scope="row"><?= __('Token') ?></th>
+            <td><?= h($user->token) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Role') ?></th>

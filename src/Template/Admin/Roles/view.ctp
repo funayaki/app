@@ -49,7 +49,7 @@
                 <th scope="col"><?= __('Password') ?></th>
                 <th scope="col"><?= __('Name') ?></th>
                 <th scope="col"><?= __('Email') ?></th>
-                <th scope="col"><?= __('Activation Key') ?></th>
+                <th scope="col"><?= __('Token') ?></th>
                 <th scope="col"><?= __('Role Id') ?></th>
                 <th scope="col"><?= __('Status') ?></th>
                 <th scope="col"><?= __('Created') ?></th>
@@ -63,7 +63,7 @@
                 <td><?= h($users->password) ?></td>
                 <td><?= h($users->name) ?></td>
                 <td><?= h($users->email) ?></td>
-                <td><?= h($users->activation_key) ?></td>
+                <td><?= h($users->token) ?></td>
                 <td><?= h($users->role_id) ?></td>
                 <td><?= h($users->active) ?></td>
                 <td><?= h($users->created) ?></td>

@@ -2,6 +2,7 @@
 namespace App\Controller\Admin;
 
 use App\Controller\AppController;
+use Cake\Event\Event;
 
 /**
  * Users Controller
@@ -12,6 +13,16 @@ use App\Controller\AppController;
  */
 class UsersController extends AppController
 {
+
+    /**
+     * @param Event $event
+     * @return \Cake\Http\Response|null|void
+     */
+    public function beforeFilter(Event $event)
+    {
+        parent::beforeFilter($event);
+        $this->Auth->allow(['forgot', 'reset']);
+    }
 
     /**
      * Index method
@@ -136,5 +147,70 @@ class UsersController extends AppController
     public function logout()
     {
         return $this->redirect($this->Auth->logout());
+    }
+
+    /**
+     * Forgot method
+     *
+     * @return \Cake\Http\Response|null
+     */
+    public function forgot()
+    {
+        if ($this->request->is('post')) {
+            $username = $this->request->getData('username');
+
+            $user = $this->Users
+                ->find('active')
+                ->find('admin')
+                ->where(['username' => $username])
+                ->first();
+
+            if (!$user) {
+                $this->Flash->error(__('Invalid username'));
+                return;
+            }
+
+            $success = $this->Users->resetPassword($user);
+            if (!$success) {
+                $this->Flash->error(__('An error occurred. Please try again.'));
+                return;
+            }
+
+            $this->Flash->success(__('An email has been sent with instructions for resetting your password.'));
+            return $this->redirect(['action' => 'login']);
+        }
+    }
+
+    /**
+     * Reset method
+     *
+     * @param $username
+     * @param $token
+     * @return \Cake\Http\Response|null
+     */
+    public function reset($username = null, $token = null)
+    {
+        $user = $this->Users
+            ->find('active')
+            ->find('admin')
+            ->where(['username' => $username, 'token' => $token])
+            ->first();
+
+        if (!$user) {
+            $this->Flash->error(__('An error occurred.'));
+            return $this->redirect(['action' => 'login']);
+        }
+
+        if ($this->request->is(['put'])) {
+            $user = $this->Users->patchEntity($user, $this->request->getData());
+            if ($this->Users->save($user)) {
+                $this->Flash->success(__('Your password has been reset successfully.'));
+                return $this->redirect(['action' => 'login']);
+            } else {
+                $this->Flash->error(__('Your password could not be saved. Please, try again.'));
+            }
+        }
+
+        $this->set(compact('user'));
     }
 }

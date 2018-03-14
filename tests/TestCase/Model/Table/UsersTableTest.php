@@ -4,6 +4,7 @@ namespace App\Test\TestCase\Model\Table;
 use App\Model\Table\UsersTable;
 use Cake\ORM\TableRegistry;
 use Cake\TestSuite\TestCase;
+use Cake\Utility\Hash;
 
 /**
  * App\Model\Table\UsersTable Test Case
@@ -80,5 +81,33 @@ class UsersTableTest extends TestCase
     public function testBuildRules()
     {
         $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test findActive method
+     *
+     * @return void
+     */
+    public function testFindActive()
+    {
+        $query = $this->Users->find('active');
+
+        $expected = array(1, 2);
+        $actual = Hash::extract($query->toArray(), '{n}.id');
+        $this->assertEquals($expected, $actual);
+    }
+
+    /**
+     * Test findAdmin method
+     *
+     * @return void
+     */
+    public function testFindAdmin()
+    {
+        $query = $this->Users->find('admin');
+
+        $expected = array(1, 3);
+        $actual = Hash::extract($query->toArray(), '{n}.id');
+        $this->assertEquals($expected, $actual);
     }
 }

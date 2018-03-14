@@ -6,11 +6,9 @@
 <div class="users form large-12 medium-12 columns content">
     <?= $this->Form->create() ?>
     <fieldset>
-        <legend><?= __('Please enter your username and password') ?></legend>
+        <legend><?= __('Please enter your username') ?></legend>
         <?= $this->Form->control('username') ?>
-        <?= $this->Form->control('password') ?>
     </fieldset>
-    <?= $this->Form->button(__('Login')); ?>
+    <?= $this->Form->button(__('Submit')); ?>
     <?= $this->Form->end() ?>
-    <?= $this->Html->link('Forgot password?', ['action' => 'forgot']); ?>
 </div>

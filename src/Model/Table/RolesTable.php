@@ -23,6 +23,7 @@ use Cake\Validation\Validator;
  */
 class RolesTable extends Table
 {
+    const ROLE_ADMIN = 1;
 
     /**
      * Initialize method

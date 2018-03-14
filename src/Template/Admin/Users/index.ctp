@@ -22,7 +22,7 @@
                 <th scope="col"><?= $this->Paginator->sort('password') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('name') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('email') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('activation_key') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('token') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('role_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('active') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
@@ -38,7 +38,7 @@
                 <td><?= h($user->password) ?></td>
                 <td><?= h($user->name) ?></td>
                 <td><?= h($user->email) ?></td>
-                <td><?= h($user->activation_key) ?></td>
+                <td><?= h($user->token) ?></td>
                 <td><?= $user->has('role') ? $this->Html->link($user->role->title, ['controller' => 'Roles', 'action' => 'view', $user->role->id]) : '' ?></td>
                 <td><?= h($user->active) ?></td>
                 <td><?= h($user->created) ?></td>
