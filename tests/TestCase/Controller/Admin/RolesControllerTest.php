@@ -20,6 +20,20 @@ class RolesControllerTest extends IntegrationTestCase
         'app.users'
     ];
 
+    public function setUp()
+    {
+        parent::setUp();
+
+        $this->enableRetainFlashMessages();
+        $this->enableCsrfToken();
+        $this->enableSecurityToken();
+    }
+
+    public function setUpAuth()
+    {
+        $this->session(['Auth.User.id' => 1]);
+    }
+
     /**
      * Test index method
      *
@@ -27,7 +41,7 @@ class RolesControllerTest extends IntegrationTestCase
      */
     public function testIndex()
     {
-        $this->session(['Auth.User.id' => 1]);
+        $this->setUpAuth();
 
         $this->get('/admin/roles');
         $this->assertResponseOk();
@@ -40,7 +54,7 @@ class RolesControllerTest extends IntegrationTestCase
      */
     public function testView()
     {
-        $this->session(['Auth.User.id' => 1]);
+        $this->setUpAuth();
 
         $this->get('/admin/roles/view/1');
         $this->assertResponseOk();
@@ -53,7 +67,7 @@ class RolesControllerTest extends IntegrationTestCase
      */
     public function testAdd()
     {
-        $this->session(['Auth.User.id' => 1]);
+        $this->setUpAuth();
 
         $data = [
             'title' => 'Lorem ipsum dolor sit amet',
@@ -71,7 +85,7 @@ class RolesControllerTest extends IntegrationTestCase
      */
     public function testEdit()
     {
-        $this->session(['Auth.User.id' => 1]);
+        $this->setUpAuth();
 
         $data = [
             'title' => 'Lorem ipsum dolor sit amet',
@@ -89,7 +103,7 @@ class RolesControllerTest extends IntegrationTestCase
      */
     public function testDelete()
     {
-        $this->session(['Auth.User.id' => 1]);
+        $this->setUpAuth();
 
         $this->delete('/admin/roles/delete/1');
         $this->assertResponseSuccess();
