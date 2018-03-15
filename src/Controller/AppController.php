@@ -14,6 +14,7 @@
  */
 namespace App\Controller;
 
+use Cake\Controller\Component\AuthComponent;
 use Cake\Controller\Controller;
 use Cake\Event\Event;
 
@@ -43,6 +44,15 @@ class AppController extends Controller
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
+        $this->loadComponent('Auth', [
+            'authError' => 'Did you really think you are allowed to see that?',
+            'authenticate' => [
+                AuthComponent::ALL => [
+                    'finder' => 'auth'
+                ],
+                'Form',
+            ],
+        ]);
 
         /*
          * Enable the following components for recommended CakePHP security settings.
