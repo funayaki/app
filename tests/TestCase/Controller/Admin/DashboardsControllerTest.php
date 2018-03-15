@@ -10,6 +10,20 @@ use Cake\TestSuite\IntegrationTestCase;
 class DashboardsControllerTest extends IntegrationTestCase
 {
 
+    public function setUp()
+    {
+        parent::setUp();
+
+        $this->enableRetainFlashMessages();
+        $this->enableCsrfToken();
+        $this->enableSecurityToken();
+    }
+
+    public function setUpAuth()
+    {
+        $this->session(['Auth.User.id' => 1]);
+    }
+
     /**
      * Test index method
      *
@@ -17,7 +31,7 @@ class DashboardsControllerTest extends IntegrationTestCase
      */
     public function testIndex()
     {
-        $this->session(['Auth.User.id' => 1]);
+        $this->setUpAuth();
 
         $this->get('/admin');
         $this->assertResponseOk();

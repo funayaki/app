@@ -20,6 +20,20 @@ class UsersControllerTest extends IntegrationTestCase
         'app.roles'
     ];
 
+    public function setUp()
+    {
+        parent::setUp();
+
+        $this->enableRetainFlashMessages();
+        $this->enableCsrfToken();
+        $this->enableSecurityToken();
+    }
+
+    public function setUpAuth()
+    {
+        $this->session(['Auth.User.id' => 1]);
+    }
+
     /**
      * Test index method
      *
@@ -27,7 +41,7 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testIndex()
     {
-        $this->session(['Auth.User.id' => 1]);
+        $this->setUpAuth();
 
         $this->get('/admin/users');
         $this->assertResponseOk();
@@ -40,7 +54,7 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testView()
     {
-        $this->session(['Auth.User.id' => 1]);
+        $this->setUpAuth();
 
         $this->get('/admin/users/view/1');
         $this->assertResponseOk();
@@ -53,7 +67,7 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testAdd()
     {
-        $this->session(['Auth.User.id' => 1]);
+        $this->setUpAuth();
 
         $data = [
             'username' => 'Lorem ipsum dolor sit amet',
@@ -76,7 +90,7 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testEdit()
     {
-        $this->session(['Auth.User.id' => 1]);
+        $this->setUpAuth();
 
         $data = [
             'username' => 'Lorem ipsum dolor sit amet',
@@ -99,7 +113,7 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testDelete()
     {
-        $this->session(['Auth.User.id' => 1]);
+        $this->setUpAuth();
 
         $this->delete('/admin/users/delete/1');
         $this->assertResponseSuccess();
@@ -122,7 +136,7 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testLoginWithInvalidPassword()
     {
-        $this->enableRetainFlashMessages();
+        $this->setUpAuth();
 
         $data = [
             'username' => 'admin',
@@ -150,6 +164,8 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testForgot()
     {
+        $this->setUpAuth();
+
         $data = [
             'username' => 'admin',
         ];
@@ -166,7 +182,7 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testForgotWithAnon()
     {
-        $this->enableRetainFlashMessages();
+        $this->setUpAuth();
 
         $data = [
             'username' => 'anon',
@@ -183,6 +199,8 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testReset()
     {
+        $this->setUpAuth();
+
         $username = 'admin';
         $token = 'apple';
 
@@ -203,15 +221,15 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testResetWithMismatchPassword()
     {
-        $this->enableRetainFlashMessages();
-
-        $username = 'admin';
-        $token = 'apple';
+        $this->setUpAuth();
 
         $data = [
             'password' => 'new_password',
             'verify_password' => 'mismatch_password',
         ];
+
+        $username = 'admin';
+        $token = 'apple';
 
         $this->put(sprintf('/admin/users/reset/%s/%s', $username, $token), $data);
         $this->assertSession('Your password could not be saved. Please, try again.', 'Flash.flash.0.message');
@@ -224,7 +242,7 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testResetWithInvalidToken()
     {
-        $this->enableRetainFlashMessages();
+        $this->setUpAuth();
 
         $username = 'admin';
         $token = 'invalid_token';
