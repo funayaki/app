@@ -164,8 +164,6 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testForgot()
     {
-        $this->setUpAuth();
-
         $data = [
             'username' => 'admin',
         ];
@@ -182,8 +180,6 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testForgotWithAnon()
     {
-        $this->setUpAuth();
-
         $data = [
             'username' => 'anon',
         ];
@@ -199,8 +195,6 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testReset()
     {
-        $this->setUpAuth();
-
         $username = 'admin';
         $token = 'apple';
 
@@ -221,8 +215,6 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testResetWithMismatchPassword()
     {
-        $this->setUpAuth();
-
         $data = [
             'password' => 'new_password',
             'verify_password' => 'mismatch_password',
@@ -242,8 +234,6 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testResetWithInvalidToken()
     {
-        $this->setUpAuth();
-
         $username = 'admin';
         $token = 'invalid_token';
 
