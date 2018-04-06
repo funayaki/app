@@ -33,4 +33,9 @@ class Role extends Entity
         'modified' => true,
         'users' => true
     ];
+
+    public function parentNode()
+    {
+        return null;
+    }
 }

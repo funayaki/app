@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "133b9707567137191c00ed7cc6b34136",
+    "content-hash": "fa0b56a7e3df5f18d026a448982224ef",
     "packages": [
         {
             "name": "aura/intl",
@@ -496,6 +496,38 @@
                 "php mobile detect"
             ],
             "time": "2018-02-26T19:39:55+00:00"
+        },
+        {
+            "name": "oldskool/cakephp-js",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oldskool/cakephp-js.git",
+                "reference": "05964d5b20bf72f7c07f651c4755d66435aedb0f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oldskool/cakephp-js/zipball/05964d5b20bf72f7c07f651c4755d66435aedb0f",
+                "reference": "05964d5b20bf72f7c07f651c4755d66435aedb0f",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": ">=3.0",
+                "php": ">=5.4.16"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "CakeJs\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "JsHelper for CakePHP 3.x",
+            "homepage": "http://github.com/oldskool/cakephp-js",
+            "time": "2016-08-02T08:57:13+00:00"
         },
         {
             "name": "psr/http-message",
@@ -2594,6 +2626,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "oldskool/cakephp-js": 20,
         "psy/psysh": 0
     },
     "prefer-stable": true,

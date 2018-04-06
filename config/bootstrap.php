@@ -216,3 +216,5 @@ if (Configure::read('debug')) {
 }
 
 Plugin::load('Acl', ['bootstrap' => true]);
+
+Plugin::load('AclManager', ['bootstrap' => true, 'routes' => true, 'autoload' => true]);

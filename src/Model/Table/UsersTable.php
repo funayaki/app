@@ -52,6 +52,8 @@ class UsersTable extends Table
             'foreignKey' => 'role_id',
             'joinType' => 'INNER'
         ]);
+
+        $this->addBehavior('Acl.Acl', ['type' => 'requester']);
     }
 
     /**
