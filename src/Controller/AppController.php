@@ -16,7 +16,6 @@ namespace App\Controller;
 
 use Cake\Controller\Component\AuthComponent;
 use Cake\Controller\Controller;
-use Cake\Event\Event;
 
 /**
  * Application Controller
@@ -28,6 +27,16 @@ use Cake\Event\Event;
  */
 class AppController extends Controller
 {
+    /**
+     * Components
+     *
+     * @var array
+     */
+    public $components = [
+        'Acl' => [
+            'className' => 'Acl.Acl'
+        ]
+    ];
 
     /**
      * Initialization hook method.
@@ -45,12 +54,18 @@ class AppController extends Controller
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
         $this->loadComponent('Auth', [
-            'authError' => 'Did you really think you are allowed to see that?',
+            'authError' => 'You are not authorized to access that location.',
             'authenticate' => [
                 AuthComponent::ALL => [
                     'finder' => 'auth'
                 ],
                 'Form',
+            ],
+            'authorize' => [
+                AuthComponent::ALL => [
+                    'actionPath' => 'controllers/'
+                ],
+                'Acl.Actions',
             ],
         ]);
 
