@@ -4,8 +4,48 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a295a82d69253538804b8b09cdd320d0",
+    "content-hash": "25f212737b3a803e8404335531f40e1a",
     "packages": [
+        {
+            "name": "admad/cakephp-sequence",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ADmad/cakephp-sequence.git",
+                "reference": "eb378c04a1fdaac64108d2698e86db291b086c1c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ADmad/cakephp-sequence/zipball/eb378c04a1fdaac64108d2698e86db291b086c1c",
+                "reference": "eb378c04a1fdaac64108d2698e86db291b086c1c",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/orm": "^3.0"
+            },
+            "require-dev": {
+                "cakephp/cakephp": "^3.0",
+                "phpunit/phpunit": "<6.0"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "ADmad\\Sequence\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Sequence plugin for CakePHP 3.0+ to maintain ordered list of records",
+            "keywords": [
+                "cakephp",
+                "list",
+                "orm",
+                "sequence"
+            ],
+            "time": "2017-08-02T06:54:59+00:00"
+        },
         {
             "name": "aura/intl",
             "version": "3.0.0",
@@ -288,6 +328,61 @@
             ],
             "description": "A composer installer for CakePHP 3.0+ plugins.",
             "time": "2017-12-24T21:09:29+00:00"
+        },
+        {
+            "name": "friendsofcake/search",
+            "version": "4.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfCake/search.git",
+                "reference": "ef1a489fee498059bbcb7df241d11e309fa1b5a3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfCake/search/zipball/ef1a489fee498059bbcb7df241d11e309fa1b5a3",
+                "reference": "ef1a489fee498059bbcb7df241d11e309fa1b5a3",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "^3.4"
+            },
+            "require-dev": {
+                "cakephp/cakephp-codesniffer": "^3.0",
+                "friendsofcake/cakephp-test-utilities": "dev-master",
+                "muffin/webservice": "^1.2",
+                "phpunit/phpunit": "<6.0"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Search\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Winther",
+                    "homepage": "http://cakephp.nu/",
+                    "role": "Author"
+                },
+                {
+                    "name": "ADmad",
+                    "homepage": "https://github.com/admad",
+                    "role": "Contributor"
+                }
+            ],
+            "description": "CakePHP Search plugin using PRG pattern",
+            "homepage": "https://github.com/FriendsOfCake/search",
+            "keywords": [
+                "cake3",
+                "cakephp",
+                "cakephp3",
+                "search"
+            ],
+            "time": "2018-03-07T20:49:15+00:00"
         },
         {
             "name": "josegonzalez/dotenv",

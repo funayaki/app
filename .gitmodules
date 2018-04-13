@@ -1,0 +1,3 @@
+[submodule "plugins/Settings"]
+	path = plugins/Settings
+	url = https://github.com/funayaki/settings.git
