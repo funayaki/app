@@ -44,6 +44,8 @@ class RolesTable extends Table
         $this->hasMany('Users', [
             'foreignKey' => 'role_id'
         ]);
+
+        $this->addBehavior('Acl.Acl', ['type' => 'requester']);
     }
 
     /**

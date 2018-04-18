@@ -214,3 +214,7 @@ Type::build('timestamp')
 if (Configure::read('debug')) {
     Plugin::load('DebugKit', ['bootstrap' => true]);
 }
+
+Plugin::load('Acl', ['bootstrap' => true]);
+
+Plugin::load('AclManager', ['bootstrap' => true, 'routes' => true, 'autoload' => true]);
