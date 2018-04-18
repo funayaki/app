@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3bc4a40e43d1d296fd71d96184a1d63c",
+    "content-hash": "c2bc6fc4b6712169a62df9a1daa93cd2",
     "packages": [
         {
             "name": "admad/cakephp-sequence",
@@ -374,6 +374,57 @@
             ],
             "description": "A composer installer for CakePHP 3.0+ plugins.",
             "time": "2017-12-24T21:09:29+00:00"
+        },
+        {
+            "name": "friendsofcake/bootstrap-ui",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfCake/bootstrap-ui.git",
+                "reference": "373184478a1d3cd8b272cad60a3db55479dd3dc5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfCake/bootstrap-ui/zipball/373184478a1d3cd8b272cad60a3db55479dd3dc5",
+                "reference": "373184478a1d3cd8b272cad60a3db55479dd3dc5",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "^3.5"
+            },
+            "require-dev": {
+                "cakephp/chronos": "^1.1",
+                "phpunit/phpunit": "^5.7.14|^6.0"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "BootstrapUI\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jad Bitar",
+                    "homepage": "http://jadb.io",
+                    "role": "Author"
+                },
+                {
+                    "name": "Others",
+                    "homepage": "https://github.com/friendsofcake/bootstrap-ui/graphs/contributors"
+                }
+            ],
+            "description": "Twitter Bootstrap 3 support for CakePHP 3",
+            "homepage": "http://github.com/friendsofcake/bootstrap-ui",
+            "keywords": [
+                "bootstrap",
+                "cakephp",
+                "twitter"
+            ],
+            "time": "2018-04-16T21:52:50+00:00"
         },
         {
             "name": "friendsofcake/search",
@@ -825,6 +876,70 @@
                 "php mobile detect"
             ],
             "time": "2018-02-26T19:39:55+00:00"
+        },
+        {
+            "name": "nojimage/cakephp-admin-lte",
+            "version": "dev-cake34",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/funayaki/cakephp-admin-lte.git",
+                "reference": "22bc3f25a34cd1c996ef0941295688f0e404858e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/funayaki/cakephp-admin-lte/zipball/22bc3f25a34cd1c996ef0941295688f0e404858e",
+                "reference": "22bc3f25a34cd1c996ef0941295688f0e404858e",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "^3.4",
+                "cakephp/plugin-installer": "*",
+                "friendsofcake/bootstrap-ui": "^1.1",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7|^6.0"
+            },
+            "type": "cakephp-plugin",
+            "extra": {
+                "installer-name": "AdminLTE"
+            },
+            "autoload": {
+                "psr-4": {
+                    "AdminLTE\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "AdminLTE\\Test\\": "tests"
+                }
+            },
+            "scripts": {
+                "post-install-cmd": [
+                    "AdminLTE\\Console\\Installer::postInstall"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Takashi Nojima",
+                    "homepage": "http://php-tips.com"
+                }
+            ],
+            "description": "AdminLTE theme template for CakePHP 3.0",
+            "homepage": "http://elasticconsultants.com",
+            "keywords": [
+                "bootstrap",
+                "cakephp",
+                "template",
+                "theme"
+            ],
+            "support": {
+                "source": "https://github.com/funayaki/cakephp-admin-lte/tree/v0.4.2"
+            },
+            "time": "2018-01-23T07:49:03+00:00"
         },
         {
             "name": "oldskool/cakephp-js",
@@ -4516,6 +4631,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "funayaki/attachments": 20,
+        "nojimage/cakephp-admin-lte": 20,
         "funayaki/settings": 20,
         "oldskool/cakephp-js": 20,
         "tsmsogn/acl-manager": 20,

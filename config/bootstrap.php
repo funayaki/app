@@ -221,6 +221,8 @@ Plugin::load('AclManager', ['bootstrap' => true, 'routes' => true, 'autoload' =>
 
 Plugin::load('Attachments', ['bootstrap' => true, 'routes' => true, 'autoload' => true]);
 
+Plugin::load('AdminLTE');
+
 Plugin::load('Josegonzalez/Upload');
 
 Plugin::load('Settings', ['bootstrap' => true, 'routes' => true, 'autoload' => true]);
