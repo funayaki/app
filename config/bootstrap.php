@@ -219,4 +219,8 @@ Plugin::load('Acl', ['bootstrap' => true]);
 
 Plugin::load('AclManager', ['bootstrap' => true, 'routes' => true, 'autoload' => true]);
 
+Plugin::load('Attachments', ['bootstrap' => true, 'routes' => true, 'autoload' => true]);
+
+Plugin::load('Josegonzalez/Upload');
+
 Plugin::load('Settings', ['bootstrap' => true, 'routes' => true, 'autoload' => true]);
