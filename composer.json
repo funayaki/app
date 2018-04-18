@@ -4,6 +4,12 @@
     "homepage": "https://cakephp.org",
     "type": "project",
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/tsmsogn/acl-manager"
+        }
+    ],
     "require": {
         "php": ">=5.6",
         "cakephp/acl": "^0.2.6",
@@ -12,7 +18,8 @@
         "cakephp/plugin-installer": "^1.0",
         "josegonzalez/dotenv": "2.*",
         "mobiledetect/mobiledetectlib": "2.*",
-        "oldskool/cakephp-js": "dev-master"
+        "oldskool/cakephp-js": "dev-master",
+        "tsmsogn/acl-manager": "dev-master"
     },
     "require-dev": {
         "cakephp/bake": "^1.1",

@@ -1,3 +1,0 @@
-[submodule "plugins/AclManager"]
-	path = plugins/AclManager
-	url = https://github.com/tsmsogn/acl-manager.git
