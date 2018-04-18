@@ -8,14 +8,21 @@
         {
             "type": "vcs",
             "url": "https://github.com/tsmsogn/acl-manager"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/funayaki/settings"
         }
     ],
     "require": {
         "php": ">=5.6",
+        "admad/cakephp-sequence": "^2.1",
         "cakephp/acl": "^0.2.6",
         "cakephp/cakephp": "3.5.*",
         "cakephp/migrations": "^1.0",
         "cakephp/plugin-installer": "^1.0",
+        "friendsofcake/search": "^4.3",
+        "funayaki/settings": "dev-master",
         "josegonzalez/dotenv": "2.*",
         "mobiledetect/mobiledetectlib": "2.*",
         "oldskool/cakephp-js": "dev-master",
