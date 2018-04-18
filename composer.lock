@@ -4,8 +4,48 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "16a4c86c418f4a371e527163d6d9296d",
+    "content-hash": "359a06ac8e4d23e8434e86fd25d7b5b7",
     "packages": [
+        {
+            "name": "admad/cakephp-sequence",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ADmad/cakephp-sequence.git",
+                "reference": "eb378c04a1fdaac64108d2698e86db291b086c1c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ADmad/cakephp-sequence/zipball/eb378c04a1fdaac64108d2698e86db291b086c1c",
+                "reference": "eb378c04a1fdaac64108d2698e86db291b086c1c",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/orm": "^3.0"
+            },
+            "require-dev": {
+                "cakephp/cakephp": "^3.0",
+                "phpunit/phpunit": "<6.0"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "ADmad\\Sequence\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Sequence plugin for CakePHP 3.0+ to maintain ordered list of records",
+            "keywords": [
+                "cakephp",
+                "list",
+                "orm",
+                "sequence"
+            ],
+            "time": "2017-08-02T06:54:59+00:00"
+        },
         {
             "name": "aura/intl",
             "version": "3.0.0",
@@ -334,6 +374,114 @@
             ],
             "description": "A composer installer for CakePHP 3.0+ plugins.",
             "time": "2017-12-24T21:09:29+00:00"
+        },
+        {
+            "name": "friendsofcake/search",
+            "version": "4.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfCake/search.git",
+                "reference": "f928b2b594697fb65c8e9c1404f7cd89a31e7a88"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfCake/search/zipball/f928b2b594697fb65c8e9c1404f7cd89a31e7a88",
+                "reference": "f928b2b594697fb65c8e9c1404f7cd89a31e7a88",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "^3.5"
+            },
+            "require-dev": {
+                "cakephp/cakephp-codesniffer": "^3.0",
+                "cakephp/chronos": "^1.1",
+                "friendsofcake/cakephp-test-utilities": "^1.0",
+                "muffin/webservice": "^1.3",
+                "phpunit/phpunit": "^5.7.14|^6.0"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Search\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Winther",
+                    "homepage": "http://cakephp.nu/",
+                    "role": "Author"
+                },
+                {
+                    "name": "ADmad",
+                    "homepage": "https://github.com/admad",
+                    "role": "Contributor"
+                }
+            ],
+            "description": "CakePHP Search plugin using PRG pattern",
+            "homepage": "https://github.com/FriendsOfCake/search",
+            "keywords": [
+                "cake3",
+                "cakephp",
+                "cakephp3",
+                "search"
+            ],
+            "time": "2018-04-16T21:29:06+00:00"
+        },
+        {
+            "name": "funayaki/settings",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/funayaki/settings.git",
+                "reference": "d6f179b11340c284d9aa5f9702fdbd76a346ce35"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/funayaki/settings/zipball/d6f179b11340c284d9aa5f9702fdbd76a346ce35",
+                "reference": "d6f179b11340c284d9aa5f9702fdbd76a346ce35",
+                "shasum": ""
+            },
+            "require": {
+                "admad/cakephp-sequence": "^2.1",
+                "cakephp/cakephp": "~3.5.0",
+                "friendsofcake/search": "^4.3",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "cakephp/cakephp-codesniffer": "^3.0",
+                "phpunit/phpunit": "^5.7|^6.0"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Settings\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Settings\\Test\\": "tests",
+                    "App\\": "tests/test_app/src/",
+                    "Cake\\Test\\": "vendor/cakephp/cakephp/tests"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Croogo Development Team",
+                    "email": "team@croogo.org"
+                }
+            ],
+            "description": "Croogo Settings Plugin",
+            "support": {
+                "source": "https://github.com/funayaki/settings/tree/master"
+            },
+            "time": "2018-04-18T04:46:10+00:00"
         },
         {
             "name": "josegonzalez/dotenv",
@@ -4186,6 +4334,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "funayaki/settings": 20,
         "oldskool/cakephp-js": 20,
         "tsmsogn/acl-manager": 20,
         "psy/psysh": 0
