@@ -128,6 +128,8 @@ class UsersController extends AppController
      */
     public function login()
     {
+        $this->viewBuilder()->setLayout('login');
+
         if ($this->request->is('post')) {
             $user = $this->Auth->identify();
             if ($user) {
@@ -156,6 +158,8 @@ class UsersController extends AppController
      */
     public function forgot()
     {
+        $this->viewBuilder()->setLayout('login');
+
         if ($this->request->is('post')) {
             $username = $this->request->getData('username');
 
@@ -190,6 +194,8 @@ class UsersController extends AppController
      */
     public function reset($username = null, $token = null)
     {
+        $this->viewBuilder()->setLayout('login');
+
         $user = $this->Users
             ->find('active')
             ->find('admin')

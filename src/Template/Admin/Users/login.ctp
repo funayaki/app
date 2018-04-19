@@ -3,14 +3,9 @@
  * @var \App\View\AppView $this
  */
 ?>
-<div class="users form large-12 medium-12 columns content">
-    <?= $this->Form->create() ?>
-    <fieldset>
-        <legend><?= __('Please enter your username and password') ?></legend>
-        <?= $this->Form->control('username') ?>
-        <?= $this->Form->control('password') ?>
-    </fieldset>
-    <?= $this->Form->button(__('Login')); ?>
-    <?= $this->Form->end() ?>
-    <?= $this->Html->link('Forgot password?', ['action' => 'forgot']); ?>
-</div>
+<?= $this->Form->create() ?>
+<?= $this->Form->control('username', ['label' => false, 'placeholder' => __('Username')]) ?>
+<?= $this->Form->control('password', ['label' => false, 'placeholder' => __('Password')]) ?>
+<?= $this->Form->button(__('Sign In'), ['class' => 'btn btn-primary btn-block btn-flat']); ?>
+<?= $this->Form->end() ?>
+<?= $this->Html->link('I forgot my password', ['action' => 'forgot']); ?>
