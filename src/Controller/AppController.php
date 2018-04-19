@@ -16,6 +16,7 @@ namespace App\Controller;
 
 use Cake\Controller\Component\AuthComponent;
 use Cake\Controller\Controller;
+use Cake\Event\Event;
 
 /**
  * Application Controller
@@ -75,5 +76,16 @@ class AppController extends Controller
          */
         $this->loadComponent('Security');
         $this->loadComponent('Csrf');
+    }
+
+    /**
+     * @param Event $event
+     * @return void
+     */
+    public function beforeRender(Event $event)
+    {
+        if ($this->request->getParam('prefix') === 'admin') {
+            $this->viewBuilder()->setTheme('AdminLTE');
+        }
     }
 }

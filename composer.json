@@ -29,6 +29,7 @@
         "funayaki/attachments": "dev-master",
         "funayaki/settings": "dev-master",
         "josegonzalez/dotenv": "2.*",
+        "maiconpinto/cakephp-adminlte-theme": "^1.0",
         "mobiledetect/mobiledetectlib": "2.*",
         "oldskool/cakephp-js": "dev-master",
         "tsmsogn/acl-manager": "dev-master"
