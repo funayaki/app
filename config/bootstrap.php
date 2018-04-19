@@ -226,3 +226,19 @@ Plugin::load('Attachments', ['bootstrap' => true, 'routes' => true, 'autoload' =
 Plugin::load('Josegonzalez/Upload');
 
 Plugin::load('Settings', ['bootstrap' => true, 'routes' => true, 'autoload' => true]);
+
+// Settings for AdminLTE
+Configure::write('Theme', [
+    'title' => 'AdminLTE',
+    'logo' => [
+        'mini' => '<b>A</b>LT',
+        'large' => '<b>Admin</b>LTE'
+    ],
+    'login' => [
+        'show_remember' => false,
+        'show_register' => false,
+        'show_social' => false
+    ],
+    'folder' => ROOT,
+    'skin' => 'blue'
+]);
