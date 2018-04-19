@@ -15,6 +15,10 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/funayaki/cakephp-adminlte-theme"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/funayaki/settings"
         }
     ],
@@ -29,7 +33,7 @@
         "funayaki/attachments": "dev-master",
         "funayaki/settings": "dev-master",
         "josegonzalez/dotenv": "2.*",
-        "maiconpinto/cakephp-adminlte-theme": "^1.0",
+        "maiconpinto/cakephp-adminlte-theme": "dev-funayaki",
         "mobiledetect/mobiledetectlib": "2.*",
         "oldskool/cakephp-js": "dev-master",
         "tsmsogn/acl-manager": "dev-master"
