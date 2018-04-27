@@ -481,12 +481,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/funayaki/settings.git",
-                "reference": "d6f179b11340c284d9aa5f9702fdbd76a346ce35"
+                "reference": "1c298f8a6d3849cd299fb10332fb80b4ac1f3669"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/funayaki/settings/zipball/d6f179b11340c284d9aa5f9702fdbd76a346ce35",
-                "reference": "d6f179b11340c284d9aa5f9702fdbd76a346ce35",
+                "url": "https://api.github.com/repos/funayaki/settings/zipball/1c298f8a6d3849cd299fb10332fb80b4ac1f3669",
+                "reference": "1c298f8a6d3849cd299fb10332fb80b4ac1f3669",
                 "shasum": ""
             },
             "require": {
@@ -525,7 +525,7 @@
             "support": {
                 "source": "https://github.com/funayaki/settings/tree/master"
             },
-            "time": "2018-04-18T04:46:10+00:00"
+            "time": "2018-04-24T06:01:22+00:00"
         },
         {
             "name": "josegonzalez/cakephp-upload",
@@ -781,12 +781,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/funayaki/cakephp-adminlte-theme.git",
-                "reference": "baf5b5abb8973fb6083bab301044254f02e31728"
+                "reference": "39789f52b82a66bfe3ba2a8f95caf8bffcff4266"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/funayaki/cakephp-adminlte-theme/zipball/baf5b5abb8973fb6083bab301044254f02e31728",
-                "reference": "baf5b5abb8973fb6083bab301044254f02e31728",
+                "url": "https://api.github.com/repos/funayaki/cakephp-adminlte-theme/zipball/39789f52b82a66bfe3ba2a8f95caf8bffcff4266",
+                "reference": "39789f52b82a66bfe3ba2a8f95caf8bffcff4266",
                 "shasum": ""
             },
             "require": {
@@ -824,7 +824,7 @@
                 "issues": "https://github.com/maiconpinto/cakephp-adminlte-theme/issues",
                 "source": "https://github.com/maiconpinto/cakephp-adminlte-theme"
             },
-            "time": "2018-04-19T06:23:20+00:00"
+            "time": "2018-04-24T02:47:41+00:00"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -1433,12 +1433,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/tsmsogn/acl-manager.git",
-                "reference": "e35c5d47d1356688711a563d44dfcc84906e4ce9"
+                "reference": "4bf16ce936c3fe46d41a6d4796949967368c004b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tsmsogn/acl-manager/zipball/e35c5d47d1356688711a563d44dfcc84906e4ce9",
-                "reference": "e35c5d47d1356688711a563d44dfcc84906e4ce9",
+                "url": "https://api.github.com/repos/tsmsogn/acl-manager/zipball/4bf16ce936c3fe46d41a6d4796949967368c004b",
+                "reference": "4bf16ce936c3fe46d41a6d4796949967368c004b",
                 "shasum": ""
             },
             "require": {
@@ -1473,7 +1473,7 @@
                 "source": "https://github.com/tsmsogn/acl-manager/tree/master",
                 "issues": "https://github.com/tsmsogn/acl-manager/issues"
             },
-            "time": "2018-04-18T01:44:33+00:00"
+            "time": "2018-04-26T02:30:26+00:00"
         },
         {
             "name": "zendframework/zend-diactoros",
