@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "91e10d1c0c8d3fb2ab7e0a9afcc38bc2",
+    "content-hash": "50d600bdc6343b62aa258c2498aa03da",
     "packages": [
         {
             "name": "admad/cakephp-sequence",
@@ -382,12 +382,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/funayaki/cake-adminlte.git",
-                "reference": "87049d0e08afc519481760459491d0cf754df552"
+                "reference": "cc5e73e8137a44dab5a1549ef9b357f851d074b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/funayaki/cake-adminlte/zipball/87049d0e08afc519481760459491d0cf754df552",
-                "reference": "87049d0e08afc519481760459491d0cf754df552",
+                "url": "https://api.github.com/repos/funayaki/cake-adminlte/zipball/cc5e73e8137a44dab5a1549ef9b357f851d074b2",
+                "reference": "cc5e73e8137a44dab5a1549ef9b357f851d074b2",
                 "shasum": ""
             },
             "require": {
@@ -421,7 +421,7 @@
             "support": {
                 "source": "https://github.com/funayaki/cake-adminlte/tree/feature"
             },
-            "time": "2018-05-06T01:39:59+00:00"
+            "time": "2018-05-07T04:08:49+00:00"
         },
         {
             "name": "friendsofcake/search",
@@ -1035,6 +1035,62 @@
                 "php mobile detect"
             ],
             "time": "2018-02-26T19:39:55+00:00"
+        },
+        {
+            "name": "muffin/footprint",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/UseMuffin/Footprint.git",
+                "reference": "eaebe58e60618fc8e67eae10b8a633ad8640f44b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/UseMuffin/Footprint/zipball/eaebe58e60618fc8e67eae10b8a633ad8640f44b",
+                "reference": "eaebe58e60618fc8e67eae10b8a633ad8640f44b",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "^3.5"
+            },
+            "require-dev": {
+                "cakephp/cakephp-codesniffer": "^3.0",
+                "phpunit/phpunit": "^5.7.14|^6.0"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Muffin\\Footprint\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jad Bitar",
+                    "homepage": "http://jadb.io",
+                    "role": "Author"
+                },
+                {
+                    "name": "ADmad",
+                    "homepage": "https://github.com/ADmad",
+                    "role": "Author"
+                },
+                {
+                    "name": "Others",
+                    "homepage": "https://github.com/usemuffin/footprint/graphs/contributors"
+                }
+            ],
+            "description": "CakePHP 3.0+ plugin to allow passing currently logged in user to model layer",
+            "homepage": "https://github.com/usemuffin/footprint",
+            "keywords": [
+                "cakephp",
+                "footprint",
+                "muffin"
+            ],
+            "time": "2018-04-15T16:33:18+00:00"
         },
         {
             "name": "oldskool/cakephp-js",

@@ -40,6 +40,7 @@
         "josegonzalez/dotenv": "2.*",
         "maiconpinto/cakephp-adminlte-theme": "dev-funayaki",
         "mobiledetect/mobiledetectlib": "2.*",
+        "muffin/footprint": "^1.2",
         "oldskool/cakephp-js": "dev-master",
         "tsmsogn/acl-manager": "dev-master"
     },
