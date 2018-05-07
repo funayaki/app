@@ -16,7 +16,10 @@ namespace App\Controller;
 
 use Cake\Controller\Component\AuthComponent;
 use Cake\Controller\Controller;
+use Cake\Core\Configure;
 use Cake\Event\Event;
+use Cake\ORM\TableRegistry;
+use Muffin\Footprint\Auth\FootprintAwareTrait;
 
 /**
  * Application Controller
@@ -28,6 +31,8 @@ use Cake\Event\Event;
  */
 class AppController extends Controller
 {
+    use FootprintAwareTrait;
+
     /**
      * Components
      *
@@ -98,6 +103,12 @@ class AppController extends Controller
     {
         if ($this->request->getParam('prefix') === 'admin') {
             $this->viewBuilder()->setTheme('Cirici/AdminLTE');
+
+            // Set logged in user info to viewVars
+            $currentUser = $this->_getCurrentUser();
+            if ($currentUser) {
+                $this->set('currentUser', TableRegistry::get('Users')->get($currentUser->id));
+            }
         }
     }
 }

@@ -38,5 +38,10 @@ class AppView extends View
     {
         $this->loadHelper('Breadcrumbs', ['className' => 'AdminLTE.Breadcrumbs']);
         $this->loadHelper('Form', ['className' => 'AdminLTE.Form']);
+
+        if (isset($this->viewVars['currentUser']) && $this->viewVars['currentUser']) {
+            $user = $this->viewVars['currentUser'];
+            $this->assign('AdminLTE.user.small', $user->name);
+        }
     }
 }
