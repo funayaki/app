@@ -40,6 +40,17 @@ class AppController extends Controller
     ];
 
     /**
+     * {@inheritdoc}
+     *
+     * @var array
+     * @link http://book.cakephp.org/3.0/en/controllers.html#configuring-helpers-to-load
+     */
+    public $helpers = [
+        'Gourmet/KnpMenu.Menu',
+        'Breadcrumbs'
+    ];
+
+    /**
      * Initialization hook method.
      *
      * Use this method to add common initialization code like loading components.
@@ -69,6 +80,7 @@ class AppController extends Controller
                 'Acl.Actions',
             ],
         ]);
+        $this->loadComponent('Gourmet/KnpMenu.Menu');
 
         /*
          * Enable the following components for recommended CakePHP security settings.
@@ -85,7 +97,7 @@ class AppController extends Controller
     public function beforeRender(Event $event)
     {
         if ($this->request->getParam('prefix') === 'admin') {
-            $this->viewBuilder()->setTheme('AdminLTE');
+            $this->viewBuilder()->setTheme('Cirici/AdminLTE');
         }
     }
 }

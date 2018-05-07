@@ -19,6 +19,10 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/funayaki/cake-adminlte"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/funayaki/settings"
         }
     ],
@@ -29,6 +33,7 @@
         "cakephp/cakephp": "3.5.*",
         "cakephp/migrations": "^1.0",
         "cakephp/plugin-installer": "^1.0",
+        "ciricihq/adminlte": "dev-feature",
         "friendsofcake/search": "^4.3",
         "funayaki/attachments": "dev-master",
         "funayaki/settings": "dev-master",

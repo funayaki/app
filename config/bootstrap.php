@@ -41,6 +41,7 @@ use Cake\Error\ErrorHandler;
 use Cake\Http\ServerRequest;
 use Cake\Log\Log;
 use Cake\Mailer\Email;
+use Cake\Routing\Router;
 use Cake\Utility\Inflector;
 use Cake\Utility\Security;
 
@@ -219,26 +220,17 @@ Plugin::load('Acl', ['bootstrap' => true]);
 
 Plugin::load('AclManager', ['bootstrap' => true, 'routes' => true, 'autoload' => true]);
 
-Plugin::load('AdminLTE', ['bootstrap' => true, 'routes' => true]);
+Plugin::load('AdminLTE');
 
 Plugin::load('Attachments', ['bootstrap' => true, 'routes' => true, 'autoload' => true]);
+
+Plugin::load('Cirici/AdminLTE', ['bootstrap' => true]);
 
 Plugin::load('Josegonzalez/Upload');
 
 Plugin::load('Settings', ['bootstrap' => true, 'routes' => true, 'autoload' => true]);
 
-// Settings for AdminLTE
-Configure::write('Theme', [
-    'title' => 'AdminLTE',
-    'logo' => [
-        'mini' => '<b>A</b>LT',
-        'large' => '<b>Admin</b>LTE'
-    ],
-    'login' => [
-        'show_remember' => false,
-        'show_register' => false,
-        'show_social' => false
-    ],
-    'folder' => ROOT,
-    'skin' => 'blue'
-]);
+// Settings
+Configure::write('AdminLTE.links.logout', Router::url(
+    ['plugin' => false, 'controller' => 'Users', 'action' => 'logout', 'prefix' => 'admin']
+));
