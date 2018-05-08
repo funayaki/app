@@ -1,0 +1,27 @@
+Users:
+  uri: '#'
+  attributes:
+    icon: users
+  children:
+    Users:
+      uri: /admin/users
+      attributes:
+        icon: circle-o
+    Add user:
+      uri: /admin/users/add
+      attributes:
+        icon: circle-o
+
+Roles:
+  uri: '#'
+  attributes:
+    icon: suitcase
+  children:
+    Roles:
+      uri: /admin/roles
+      attributes:
+        icon: circle-o
+    Add role:
+      uri: /admin/roles/add
+      attributes:
+        icon: circle-o
