@@ -25,3 +25,31 @@ Roles:
       uri: /admin/roles/add
       attributes:
         icon: circle-o
+        
+Attachments:
+  uri: '#'
+  attributes:
+    icon: file
+  children:
+    Attachments:
+      uri: /admin/attachments/attachments
+      attributes:
+        icon: circle-o
+    Add attachment:
+      uri: /admin/attachments/attachments/add
+      attributes:
+        icon: circle-o
+
+Settings:
+  uri: '#'
+  attributes:
+    icon: cogs
+  children:
+    Settings:
+      uri: /admin/settings/settings
+      attributes:
+        icon: circle-o
+    Add setting:
+      uri: /admin/settings/settings/add
+      attributes:
+        icon: circle-o
