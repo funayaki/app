@@ -438,12 +438,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/funayaki/cake-adminlte.git",
-                "reference": "b9d4eaeb8f9944f4c975d4a332991829fd18db45"
+                "reference": "1aca62ad544eb29610c73abf0530213ee0ff7ff7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/funayaki/cake-adminlte/zipball/b9d4eaeb8f9944f4c975d4a332991829fd18db45",
-                "reference": "b9d4eaeb8f9944f4c975d4a332991829fd18db45",
+                "url": "https://api.github.com/repos/funayaki/cake-adminlte/zipball/1aca62ad544eb29610c73abf0530213ee0ff7ff7",
+                "reference": "1aca62ad544eb29610c73abf0530213ee0ff7ff7",
                 "shasum": ""
             },
             "require": {
@@ -477,7 +477,7 @@
             "support": {
                 "source": "https://github.com/funayaki/cake-adminlte/tree/feature"
             },
-            "time": "2018-05-10T04:03:29+00:00"
+            "time": "2018-05-10T09:45:19+00:00"
         },
         {
             "name": "funayaki/attachments",
