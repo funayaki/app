@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4c41a04aada7936f55365e645e68fc27",
+    "content-hash": "02e81477c8a1e1f9668f74429ec9fcb6",
     "packages": [
         {
             "name": "admad/cakephp-sequence",
@@ -377,57 +377,6 @@
             "time": "2017-12-24T21:09:29+00:00"
         },
         {
-            "name": "friendsofcake/bootstrap-ui",
-            "version": "1.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FriendsOfCake/bootstrap-ui.git",
-                "reference": "373184478a1d3cd8b272cad60a3db55479dd3dc5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfCake/bootstrap-ui/zipball/373184478a1d3cd8b272cad60a3db55479dd3dc5",
-                "reference": "373184478a1d3cd8b272cad60a3db55479dd3dc5",
-                "shasum": ""
-            },
-            "require": {
-                "cakephp/cakephp": "^3.5"
-            },
-            "require-dev": {
-                "cakephp/chronos": "^1.1",
-                "phpunit/phpunit": "^5.7.14|^6.0"
-            },
-            "type": "cakephp-plugin",
-            "autoload": {
-                "psr-4": {
-                    "BootstrapUI\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jad Bitar",
-                    "homepage": "http://jadb.io",
-                    "role": "Author"
-                },
-                {
-                    "name": "Others",
-                    "homepage": "https://github.com/friendsofcake/bootstrap-ui/graphs/contributors"
-                }
-            ],
-            "description": "Twitter Bootstrap 3 support for CakePHP 3",
-            "homepage": "http://github.com/friendsofcake/bootstrap-ui",
-            "keywords": [
-                "bootstrap",
-                "cakephp",
-                "twitter"
-            ],
-            "time": "2018-04-16T21:52:50+00:00"
-        },
-        {
             "name": "friendsofcake/search",
             "version": "4.4.0",
             "source": {
@@ -489,12 +438,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/funayaki/cake-adminlte.git",
-                "reference": "940746f7af8b78faf085532b196a6eb727198701"
+                "reference": "b9d4eaeb8f9944f4c975d4a332991829fd18db45"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/funayaki/cake-adminlte/zipball/940746f7af8b78faf085532b196a6eb727198701",
-                "reference": "940746f7af8b78faf085532b196a6eb727198701",
+                "url": "https://api.github.com/repos/funayaki/cake-adminlte/zipball/b9d4eaeb8f9944f4c975d4a332991829fd18db45",
+                "reference": "b9d4eaeb8f9944f4c975d4a332991829fd18db45",
                 "shasum": ""
             },
             "require": {
@@ -505,7 +454,7 @@
             },
             "require-dev": {
                 "cakephp/cakephp-codesniffer": "*",
-                "phpunit/phpunit": "*",
+                "phpunit/phpunit": "^5.7|^6.0",
                 "squizlabs/php_codesniffer": "~2.6.0"
             },
             "type": "cakephp-plugin",
@@ -528,7 +477,7 @@
             "support": {
                 "source": "https://github.com/funayaki/cake-adminlte/tree/feature"
             },
-            "time": "2018-05-08T00:28:52+00:00"
+            "time": "2018-05-10T04:03:29+00:00"
         },
         {
             "name": "funayaki/attachments",
@@ -536,12 +485,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/funayaki/attachments.git",
-                "reference": "882180a07332a26af93175c5778a6928db8176a5"
+                "reference": "b7fbd450a25fa594a75aa0012c7bae7bc5260094"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/funayaki/attachments/zipball/882180a07332a26af93175c5778a6928db8176a5",
-                "reference": "882180a07332a26af93175c5778a6928db8176a5",
+                "url": "https://api.github.com/repos/funayaki/attachments/zipball/b7fbd450a25fa594a75aa0012c7bae7bc5260094",
+                "reference": "b7fbd450a25fa594a75aa0012c7bae7bc5260094",
                 "shasum": ""
             },
             "require": {
@@ -571,7 +520,67 @@
                 "source": "https://github.com/funayaki/attachments/tree/master",
                 "issues": "https://github.com/funayaki/attachments/issues"
             },
-            "time": "2018-04-18T05:13:24+00:00"
+            "time": "2018-05-10T05:24:03+00:00"
+        },
+        {
+            "name": "funayaki/bootstrap-ui",
+            "version": "dev-adminlte",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/funayaki/bootstrap-ui.git",
+                "reference": "34df83cf662e6fa8bcf74db71ae478288b20a5c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/funayaki/bootstrap-ui/zipball/34df83cf662e6fa8bcf74db71ae478288b20a5c9",
+                "reference": "34df83cf662e6fa8bcf74db71ae478288b20a5c9",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "^3.5"
+            },
+            "require-dev": {
+                "cakephp/chronos": "^1.1",
+                "phpunit/phpunit": "^5.7.14|^6.0"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "BootstrapUI\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "BootstrapUI\\Test\\": "tests",
+                    "TestApp\\": "tests/test_app/TestApp"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jad Bitar",
+                    "homepage": "http://jadb.io",
+                    "role": "Author"
+                },
+                {
+                    "name": "Others",
+                    "homepage": "https://github.com/friendsofcake/bootstrap-ui/graphs/contributors"
+                }
+            ],
+            "description": "Twitter Bootstrap 3 support for CakePHP 3",
+            "homepage": "http://github.com/funayaki/bootstrap-ui",
+            "keywords": [
+                "bootstrap",
+                "cakephp",
+                "twitter"
+            ],
+            "support": {
+                "issues": "http://github.com/funayaki/bootstrap-ui/issues",
+                "source": "http://github.com/funayaki/bootstrap-ui"
+            },
+            "time": "2018-05-10T07:43:37+00:00"
         },
         {
             "name": "funayaki/cakephp-adminlte-theme",
@@ -579,12 +588,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/funayaki/cakephp-adminlte-theme.git",
-                "reference": "abd2c5b61666a7fa52bbe52afee293a2a0dd79fb"
+                "reference": "ab9794a3438b4d6d4a3e7f86a21e2decbb8ea2c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/funayaki/cakephp-adminlte-theme/zipball/abd2c5b61666a7fa52bbe52afee293a2a0dd79fb",
-                "reference": "abd2c5b61666a7fa52bbe52afee293a2a0dd79fb",
+                "url": "https://api.github.com/repos/funayaki/cakephp-adminlte-theme/zipball/ab9794a3438b4d6d4a3e7f86a21e2decbb8ea2c7",
+                "reference": "ab9794a3438b4d6d4a3e7f86a21e2decbb8ea2c7",
                 "shasum": ""
             },
             "require": {
@@ -622,7 +631,7 @@
                 "issues": "https://github.com/funayaki/cakephp-adminlte-theme/issues",
                 "source": "https://github.com/funayaki/cakephp-adminlte-theme"
             },
-            "time": "2018-05-02T09:40:18+00:00"
+            "time": "2018-05-09T08:11:50+00:00"
         },
         {
             "name": "funayaki/settings",
@@ -630,12 +639,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/funayaki/settings.git",
-                "reference": "cc36be9d86b726520e8dfebf47b2efd81f7dcca3"
+                "reference": "9c8a2c2ec590416b1d827b03321e2d04420b2261"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/funayaki/settings/zipball/cc36be9d86b726520e8dfebf47b2efd81f7dcca3",
-                "reference": "cc36be9d86b726520e8dfebf47b2efd81f7dcca3",
+                "url": "https://api.github.com/repos/funayaki/settings/zipball/9c8a2c2ec590416b1d827b03321e2d04420b2261",
+                "reference": "9c8a2c2ec590416b1d827b03321e2d04420b2261",
                 "shasum": ""
             },
             "require": {
@@ -674,7 +683,7 @@
             "support": {
                 "source": "https://github.com/funayaki/settings/tree/master"
             },
-            "time": "2018-04-27T07:42:22+00:00"
+            "time": "2018-05-10T04:18:37+00:00"
         },
         {
             "name": "gourmet/knp-menu",
@@ -4837,6 +4846,7 @@
     "stability-flags": {
         "funayaki/adminlte": 20,
         "funayaki/attachments": 20,
+        "funayaki/bootstrap-ui": 20,
         "funayaki/cakephp-adminlte-theme": 20,
         "funayaki/settings": 20,
         "oldskool/cakephp-js": 20,
