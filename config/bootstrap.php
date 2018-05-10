@@ -226,6 +226,8 @@ Plugin::load('AdminLTE');
 
 Plugin::load('Attachments', ['bootstrap' => true, 'routes' => true, 'autoload' => true]);
 
+Plugin::load('BootstrapUI');
+
 Plugin::load('Cirici/AdminLTE', ['bootstrap' => true]);
 
 Plugin::load('Josegonzalez/Upload');

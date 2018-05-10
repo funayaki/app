@@ -33,6 +33,7 @@
         "cakephp/cakephp": "3.5.*",
         "cakephp/migrations": "^1.0",
         "cakephp/plugin-installer": "^1.0",
+        "friendsofcake/bootstrap-ui": "^1.4",
         "friendsofcake/search": "^4.3",
         "funayaki/adminlte": "dev-feature",
         "funayaki/attachments": "dev-master",
