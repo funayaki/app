@@ -438,12 +438,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/funayaki/cake-adminlte.git",
-                "reference": "1aca62ad544eb29610c73abf0530213ee0ff7ff7"
+                "reference": "428910edaa850396ca87d460e787b03078ffdda7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/funayaki/cake-adminlte/zipball/1aca62ad544eb29610c73abf0530213ee0ff7ff7",
-                "reference": "1aca62ad544eb29610c73abf0530213ee0ff7ff7",
+                "url": "https://api.github.com/repos/funayaki/cake-adminlte/zipball/428910edaa850396ca87d460e787b03078ffdda7",
+                "reference": "428910edaa850396ca87d460e787b03078ffdda7",
                 "shasum": ""
             },
             "require": {
@@ -477,7 +477,7 @@
             "support": {
                 "source": "https://github.com/funayaki/cake-adminlte/tree/feature"
             },
-            "time": "2018-05-10T09:45:19+00:00"
+            "time": "2018-05-11T08:39:28+00:00"
         },
         {
             "name": "funayaki/attachments",
@@ -528,12 +528,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/funayaki/bootstrap-ui.git",
-                "reference": "34df83cf662e6fa8bcf74db71ae478288b20a5c9"
+                "reference": "c3e60482201a8655fce3cf46a03a92380ed1d522"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/funayaki/bootstrap-ui/zipball/34df83cf662e6fa8bcf74db71ae478288b20a5c9",
-                "reference": "34df83cf662e6fa8bcf74db71ae478288b20a5c9",
+                "url": "https://api.github.com/repos/funayaki/bootstrap-ui/zipball/c3e60482201a8655fce3cf46a03a92380ed1d522",
+                "reference": "c3e60482201a8655fce3cf46a03a92380ed1d522",
                 "shasum": ""
             },
             "require": {
@@ -580,7 +580,7 @@
                 "issues": "http://github.com/funayaki/bootstrap-ui/issues",
                 "source": "http://github.com/funayaki/bootstrap-ui"
             },
-            "time": "2018-05-10T07:43:37+00:00"
+            "time": "2018-05-11T08:43:15+00:00"
         },
         {
             "name": "funayaki/cakephp-adminlte-theme",
