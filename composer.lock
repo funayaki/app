@@ -639,12 +639,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/funayaki/settings.git",
-                "reference": "9c8a2c2ec590416b1d827b03321e2d04420b2261"
+                "reference": "2a97ba81b5c8ee5c54fa884c0083061f91642f49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/funayaki/settings/zipball/9c8a2c2ec590416b1d827b03321e2d04420b2261",
-                "reference": "9c8a2c2ec590416b1d827b03321e2d04420b2261",
+                "url": "https://api.github.com/repos/funayaki/settings/zipball/2a97ba81b5c8ee5c54fa884c0083061f91642f49",
+                "reference": "2a97ba81b5c8ee5c54fa884c0083061f91642f49",
                 "shasum": ""
             },
             "require": {
@@ -683,7 +683,7 @@
             "support": {
                 "source": "https://github.com/funayaki/settings/tree/master"
             },
-            "time": "2018-05-10T04:18:37+00:00"
+            "time": "2018-05-11T00:16:51+00:00"
         },
         {
             "name": "gourmet/knp-menu",
