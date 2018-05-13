@@ -19,6 +19,10 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/funayaki/acl-manager"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/funayaki/cakephp-adminlte-theme"
         },
         {
