@@ -234,6 +234,8 @@ Plugin::load('Josegonzalez/Upload');
 
 Plugin::load('Settings', ['bootstrap' => true, 'routes' => true, 'autoload' => true]);
 
+Plugin::load('Taxonomy', ['bootstrap' => false, 'routes' => true, 'autoload' => true]);
+
 // Settings
 Configure::write('AdminLTE.links.logout', Router::url(
     ['plugin' => false, 'controller' => 'Users', 'action' => 'logout', 'prefix' => 'admin']

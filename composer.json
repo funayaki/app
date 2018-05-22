@@ -7,7 +7,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/tsmsogn/acl-manager"
+            "url": "https://github.com/funayaki/acl-manager"
         },
         {
             "type": "vcs",
@@ -32,6 +32,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/funayaki/settings"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/funayaki/taxonomy"
         }
     ],
     "require": {
@@ -47,6 +51,7 @@
         "funayaki/bootstrap-ui": "dev-adminlte",
         "funayaki/cakephp-adminlte-theme": "dev-funayaki",
         "funayaki/settings": "dev-master",
+        "funayaki/taxonomy": "dev-master",
         "josegonzalez/dotenv": "2.*",
         "mobiledetect/mobiledetectlib": "2.*",
         "muffin/footprint": "^1.2",

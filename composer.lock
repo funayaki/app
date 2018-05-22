@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a38479b714c6e9f2d4ae44c1283b528",
+    "content-hash": "102b24c4a83f788cd404758ae7769575",
     "packages": [
         {
             "name": "admad/cakephp-sequence",
-            "version": "2.2.0",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ADmad/cakephp-sequence.git",
-                "reference": "edbae74ff2d4bded4c83c7302b2bdfe8354bd681"
+                "reference": "1ea001f18c20c8396256ed8a3a3e9ba9b6ec7b5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ADmad/cakephp-sequence/zipball/edbae74ff2d4bded4c83c7302b2bdfe8354bd681",
-                "reference": "edbae74ff2d4bded4c83c7302b2bdfe8354bd681",
+                "url": "https://api.github.com/repos/ADmad/cakephp-sequence/zipball/1ea001f18c20c8396256ed8a3a3e9ba9b6ec7b5d",
+                "reference": "1ea001f18c20c8396256ed8a3a3e9ba9b6ec7b5d",
                 "shasum": ""
             },
             "require": {
@@ -45,7 +45,7 @@
                 "orm",
                 "sequence"
             ],
-            "time": "2018-04-18T08:47:58+00:00"
+            "time": "2018-05-14T08:16:18+00:00"
         },
         {
             "name": "aura/intl",
@@ -141,16 +141,16 @@
         },
         {
             "name": "cakephp/cakephp",
-            "version": "3.5.16",
+            "version": "3.5.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/cakephp.git",
-                "reference": "da27675395d1dbb6cd8ef122d228c52033f272c2"
+                "reference": "7727f122bac708a6b5883472bb3b22aad1e68e3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/da27675395d1dbb6cd8ef122d228c52033f272c2",
-                "reference": "da27675395d1dbb6cd8ef122d228c52033f272c2",
+                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/7727f122bac708a6b5883472bb3b22aad1e68e3b",
+                "reference": "7727f122bac708a6b5883472bb3b22aad1e68e3b",
                 "shasum": ""
             },
             "require": {
@@ -223,7 +223,7 @@
                 "rapid-development",
                 "validation"
             ],
-            "time": "2018-04-28T02:16:35+00:00"
+            "time": "2018-05-21T01:31:33+00:00"
         },
         {
             "name": "cakephp/chronos",
@@ -377,6 +377,53 @@
             "time": "2017-12-24T21:09:29+00:00"
         },
         {
+            "name": "croogo/core",
+            "version": "3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/croogo/core.git",
+                "reference": "08c38e97168d36cc234049e7196049a74021a074"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/croogo/core/zipball/08c38e97168d36cc234049e7196049a74021a074",
+                "reference": "08c38e97168d36cc234049e7196049a74021a074",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "^3.5.5"
+            },
+            "require-dev": {
+                "cakephp/cakephp-codesniffer": "dev-master",
+                "friendsofcake/cakephp-test-utilities": "dev-master",
+                "phpunit/phpunit": "4.1.*"
+            },
+            "suggest": {
+                "croogo/example": "Example Croogo plugin"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Croogo\\Core\\": "src"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Croogo Development Team",
+                    "email": "team@croogo.org"
+                }
+            ],
+            "description": "Croogo Core Plugin",
+            "time": "2017-12-06T05:03:44+00:00"
+        },
+        {
             "name": "friendsofcake/search",
             "version": "4.4.0",
             "source": {
@@ -438,12 +485,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/funayaki/cake-adminlte.git",
-                "reference": "428910edaa850396ca87d460e787b03078ffdda7"
+                "reference": "e118cfc3f268cb659e8428200b1bf36757b7a067"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/funayaki/cake-adminlte/zipball/428910edaa850396ca87d460e787b03078ffdda7",
-                "reference": "428910edaa850396ca87d460e787b03078ffdda7",
+                "url": "https://api.github.com/repos/funayaki/cake-adminlte/zipball/e118cfc3f268cb659e8428200b1bf36757b7a067",
+                "reference": "e118cfc3f268cb659e8428200b1bf36757b7a067",
                 "shasum": ""
             },
             "require": {
@@ -477,7 +524,7 @@
             "support": {
                 "source": "https://github.com/funayaki/cake-adminlte/tree/feature"
             },
-            "time": "2018-05-11T08:39:28+00:00"
+            "time": "2018-05-21T07:18:33+00:00"
         },
         {
             "name": "funayaki/attachments",
@@ -684,6 +731,44 @@
                 "source": "https://github.com/funayaki/settings/tree/master"
             },
             "time": "2018-05-11T00:16:51+00:00"
+        },
+        {
+            "name": "funayaki/taxonomy",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/funayaki/taxonomy.git",
+                "reference": "c3a4752eba4c42c676e77d9f431f7ee94bd0d878"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/funayaki/taxonomy/zipball/c3a4752eba4c42c676e77d9f431f7ee94bd0d878",
+                "reference": "c3a4752eba4c42c676e77d9f431f7ee94bd0d878",
+                "shasum": ""
+            },
+            "require": {
+                "croogo/core": "^3.0.1"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Taxonomy\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Croogo Development Team",
+                    "email": "team@croogo.org"
+                }
+            ],
+            "description": "Croogo Taxonomy Plugin",
+            "support": {
+                "source": "https://github.com/funayaki/taxonomy/tree/master"
+            },
+            "time": "2018-05-21T08:13:34+00:00"
         },
         {
             "name": "gourmet/knp-menu",
@@ -988,16 +1073,16 @@
         },
         {
             "name": "m1/env",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/m1/Env.git",
-                "reference": "d87eddd031f2aa5450fa04bb1325de8a489b3cd0"
+                "reference": "3589eae8e40d40be96de39222a6ca19c3af8eae4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/m1/Env/zipball/d87eddd031f2aa5450fa04bb1325de8a489b3cd0",
-                "reference": "d87eddd031f2aa5450fa04bb1325de8a489b3cd0",
+                "url": "https://api.github.com/repos/m1/Env/zipball/3589eae8e40d40be96de39222a6ca19c3af8eae4",
+                "reference": "3589eae8e40d40be96de39222a6ca19c3af8eae4",
                 "shasum": ""
             },
             "require": {
@@ -1042,7 +1127,7 @@
                 "parser",
                 "support"
             ],
-            "time": "2016-10-06T19:31:28+00:00"
+            "time": "2018-05-16T22:40:58+00:00"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -1706,13 +1791,13 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/tsmsogn/acl-manager.git",
-                "reference": "4bf16ce936c3fe46d41a6d4796949967368c004b"
+                "url": "https://github.com/funayaki/acl-manager.git",
+                "reference": "0d66ddb172e52fc3f01f0111de934ed6127b8026"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tsmsogn/acl-manager/zipball/4bf16ce936c3fe46d41a6d4796949967368c004b",
-                "reference": "4bf16ce936c3fe46d41a6d4796949967368c004b",
+                "url": "https://api.github.com/repos/funayaki/acl-manager/zipball/0d66ddb172e52fc3f01f0111de934ed6127b8026",
+                "reference": "0d66ddb172e52fc3f01f0111de934ed6127b8026",
                 "shasum": ""
             },
             "require": {
@@ -1744,10 +1829,10 @@
             "description": "This CakePHP plugin is an interface to manage an ACL protected web application.",
             "homepage": "http://www.alaxos.ch/blaxos/pages/view/34",
             "support": {
-                "source": "https://github.com/tsmsogn/acl-manager/tree/master",
-                "issues": "https://github.com/tsmsogn/acl-manager/issues"
+                "source": "https://github.com/funayaki/acl-manager/tree/master",
+                "issues": "https://github.com/funayaki/acl-manager/issues"
             },
-            "time": "2018-04-26T02:30:26+00:00"
+            "time": "2018-05-14T03:22:08+00:00"
         },
         {
             "name": "zendframework/zend-diactoros",
@@ -4849,6 +4934,7 @@
         "funayaki/bootstrap-ui": 20,
         "funayaki/cakephp-adminlte-theme": 20,
         "funayaki/settings": 20,
+        "funayaki/taxonomy": 20,
         "oldskool/cakephp-js": 20,
         "tsmsogn/acl-manager": 20,
         "psy/psysh": 0
