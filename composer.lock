@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "02e81477c8a1e1f9668f74429ec9fcb6",
+    "content-hash": "7cf48bb9bf2eb5b3f1d77f56d1fb7c94",
     "packages": [
         {
             "name": "admad/cakephp-sequence",
-            "version": "2.2.0",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ADmad/cakephp-sequence.git",
-                "reference": "edbae74ff2d4bded4c83c7302b2bdfe8354bd681"
+                "reference": "1ea001f18c20c8396256ed8a3a3e9ba9b6ec7b5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ADmad/cakephp-sequence/zipball/edbae74ff2d4bded4c83c7302b2bdfe8354bd681",
-                "reference": "edbae74ff2d4bded4c83c7302b2bdfe8354bd681",
+                "url": "https://api.github.com/repos/ADmad/cakephp-sequence/zipball/1ea001f18c20c8396256ed8a3a3e9ba9b6ec7b5d",
+                "reference": "1ea001f18c20c8396256ed8a3a3e9ba9b6ec7b5d",
                 "shasum": ""
             },
             "require": {
@@ -45,7 +45,7 @@
                 "orm",
                 "sequence"
             ],
-            "time": "2018-04-18T08:47:58+00:00"
+            "time": "2018-05-14T08:16:18+00:00"
         },
         {
             "name": "aura/intl",
@@ -141,16 +141,16 @@
         },
         {
             "name": "cakephp/cakephp",
-            "version": "3.5.16",
+            "version": "3.5.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/cakephp.git",
-                "reference": "da27675395d1dbb6cd8ef122d228c52033f272c2"
+                "reference": "7727f122bac708a6b5883472bb3b22aad1e68e3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/da27675395d1dbb6cd8ef122d228c52033f272c2",
-                "reference": "da27675395d1dbb6cd8ef122d228c52033f272c2",
+                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/7727f122bac708a6b5883472bb3b22aad1e68e3b",
+                "reference": "7727f122bac708a6b5883472bb3b22aad1e68e3b",
                 "shasum": ""
             },
             "require": {
@@ -223,7 +223,7 @@
                 "rapid-development",
                 "validation"
             ],
-            "time": "2018-04-28T02:16:35+00:00"
+            "time": "2018-05-21T01:31:33+00:00"
         },
         {
             "name": "cakephp/chronos",
@@ -377,6 +377,85 @@
             "time": "2017-12-24T21:09:29+00:00"
         },
         {
+            "name": "friendsofcake/crud",
+            "version": "5.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfCake/crud.git",
+                "reference": "fb272d3b0fbd806162699ce353fb253f7c1a63b5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfCake/crud/zipball/fb272d3b0fbd806162699ce353fb253f7c1a63b5",
+                "reference": "fb272d3b0fbd806162699ce353fb253f7c1a63b5",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "^3.5"
+            },
+            "require-dev": {
+                "friendsofcake/cakephp-test-utilities": "^1.0",
+                "friendsofcake/search": "^4.4",
+                "muffin/webservice": "^1.3",
+                "phpunit/phpunit": "^5.7.14|^6.0"
+            },
+            "suggest": {
+                "friendsofcake/crud-json-api": "Crud listener for building APIs following the JSON API specification",
+                "friendsofcake/crud-view": "Automated admin backend based on your Crud configuration.",
+                "friendsofcake/search": "Provides search capabilities for the Crud plugin."
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Crud\\": "src"
+                },
+                "files": [
+                    "aliases.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Winther",
+                    "homepage": "http://cakephp.nu/",
+                    "role": "Author"
+                },
+                {
+                    "name": "José Lorenzo Rodríguez",
+                    "homepage": "https://github.com/lorenzo",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "Andy Dawson",
+                    "homepage": "https://github.com/ad7six",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "ADmad",
+                    "homepage": "https://github.com/admad",
+                    "role": "Contributor"
+                }
+            ],
+            "description": "CakePHP Application development on steroids - rapid prototyping / scaffolding & production ready code - XML / JSON APIs and more",
+            "homepage": "https://github.com/FriendsOfCake/crud",
+            "keywords": [
+                "bake",
+                "cake",
+                "cakephp",
+                "create",
+                "crud",
+                "delete",
+                "retrieve",
+                "scaffold",
+                "scaffolding",
+                "update"
+            ],
+            "time": "2018-05-19T05:59:48+00:00"
+        },
+        {
             "name": "friendsofcake/search",
             "version": "4.4.0",
             "source": {
@@ -438,12 +517,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/funayaki/cake-adminlte.git",
-                "reference": "1aca62ad544eb29610c73abf0530213ee0ff7ff7"
+                "reference": "e118cfc3f268cb659e8428200b1bf36757b7a067"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/funayaki/cake-adminlte/zipball/1aca62ad544eb29610c73abf0530213ee0ff7ff7",
-                "reference": "1aca62ad544eb29610c73abf0530213ee0ff7ff7",
+                "url": "https://api.github.com/repos/funayaki/cake-adminlte/zipball/e118cfc3f268cb659e8428200b1bf36757b7a067",
+                "reference": "e118cfc3f268cb659e8428200b1bf36757b7a067",
                 "shasum": ""
             },
             "require": {
@@ -477,7 +556,7 @@
             "support": {
                 "source": "https://github.com/funayaki/cake-adminlte/tree/feature"
             },
-            "time": "2018-05-10T09:45:19+00:00"
+            "time": "2018-05-21T07:18:33+00:00"
         },
         {
             "name": "funayaki/attachments",
@@ -528,12 +607,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/funayaki/bootstrap-ui.git",
-                "reference": "34df83cf662e6fa8bcf74db71ae478288b20a5c9"
+                "reference": "c3e60482201a8655fce3cf46a03a92380ed1d522"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/funayaki/bootstrap-ui/zipball/34df83cf662e6fa8bcf74db71ae478288b20a5c9",
-                "reference": "34df83cf662e6fa8bcf74db71ae478288b20a5c9",
+                "url": "https://api.github.com/repos/funayaki/bootstrap-ui/zipball/c3e60482201a8655fce3cf46a03a92380ed1d522",
+                "reference": "c3e60482201a8655fce3cf46a03a92380ed1d522",
                 "shasum": ""
             },
             "require": {
@@ -580,7 +659,7 @@
                 "issues": "http://github.com/funayaki/bootstrap-ui/issues",
                 "source": "http://github.com/funayaki/bootstrap-ui"
             },
-            "time": "2018-05-10T07:43:37+00:00"
+            "time": "2018-05-11T08:43:15+00:00"
         },
         {
             "name": "funayaki/cakephp-adminlte-theme",
@@ -639,12 +718,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/funayaki/settings.git",
-                "reference": "2a97ba81b5c8ee5c54fa884c0083061f91642f49"
+                "reference": "4001880c8ce5cd135f69a21335fead6faaf2e23e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/funayaki/settings/zipball/2a97ba81b5c8ee5c54fa884c0083061f91642f49",
-                "reference": "2a97ba81b5c8ee5c54fa884c0083061f91642f49",
+                "url": "https://api.github.com/repos/funayaki/settings/zipball/4001880c8ce5cd135f69a21335fead6faaf2e23e",
+                "reference": "4001880c8ce5cd135f69a21335fead6faaf2e23e",
                 "shasum": ""
             },
             "require": {
@@ -683,7 +762,7 @@
             "support": {
                 "source": "https://github.com/funayaki/settings/tree/master"
             },
-            "time": "2018-05-11T00:16:51+00:00"
+            "time": "2018-05-21T09:34:53+00:00"
         },
         {
             "name": "gourmet/knp-menu",
@@ -988,16 +1067,16 @@
         },
         {
             "name": "m1/env",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/m1/Env.git",
-                "reference": "d87eddd031f2aa5450fa04bb1325de8a489b3cd0"
+                "reference": "3589eae8e40d40be96de39222a6ca19c3af8eae4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/m1/Env/zipball/d87eddd031f2aa5450fa04bb1325de8a489b3cd0",
-                "reference": "d87eddd031f2aa5450fa04bb1325de8a489b3cd0",
+                "url": "https://api.github.com/repos/m1/Env/zipball/3589eae8e40d40be96de39222a6ca19c3af8eae4",
+                "reference": "3589eae8e40d40be96de39222a6ca19c3af8eae4",
                 "shasum": ""
             },
             "require": {
@@ -1042,7 +1121,7 @@
                 "parser",
                 "support"
             ],
-            "time": "2016-10-06T19:31:28+00:00"
+            "time": "2018-05-16T22:40:58+00:00"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -1349,21 +1428,22 @@
         },
         {
             "name": "symfony/config",
-            "version": "v3.4.9",
+            "version": "v3.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "7c2a9d44f4433863e9bca682e7f03609234657f9"
+                "reference": "73e055cf2e6467715f187724a0347ea32079967c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/7c2a9d44f4433863e9bca682e7f03609234657f9",
-                "reference": "7c2a9d44f4433863e9bca682e7f03609234657f9",
+                "url": "https://api.github.com/repos/symfony/config/zipball/73e055cf2e6467715f187724a0347ea32079967c",
+                "reference": "73e055cf2e6467715f187724a0347ea32079967c",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.5.9|>=7.0.8",
-                "symfony/filesystem": "~2.8|~3.0|~4.0"
+                "symfony/filesystem": "~2.8|~3.0|~4.0",
+                "symfony/polyfill-ctype": "~1.8"
             },
             "conflict": {
                 "symfony/dependency-injection": "<3.3",
@@ -1408,20 +1488,20 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
-            "time": "2018-03-19T22:32:39+00:00"
+            "time": "2018-05-14T16:49:53+00:00"
         },
         {
             "name": "symfony/console",
-            "version": "v3.4.9",
+            "version": "v3.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "5b1fdfa8eb93464bcc36c34da39cedffef822cdf"
+                "reference": "36f83f642443c46f3cf751d4d2ee5d047d757a27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/5b1fdfa8eb93464bcc36c34da39cedffef822cdf",
-                "reference": "5b1fdfa8eb93464bcc36c34da39cedffef822cdf",
+                "url": "https://api.github.com/repos/symfony/console/zipball/36f83f642443c46f3cf751d4d2ee5d047d757a27",
+                "reference": "36f83f642443c46f3cf751d4d2ee5d047d757a27",
                 "shasum": ""
             },
             "require": {
@@ -1477,20 +1557,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2018-04-30T01:22:56+00:00"
+            "time": "2018-05-16T08:49:21+00:00"
         },
         {
             "name": "symfony/debug",
-            "version": "v4.0.9",
+            "version": "v4.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "e1d57cdb357e5b10f5fdacbb0b86689c0a435e6e"
+                "reference": "4e7c98de67cc4171d4c986554e09a511da40f3d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/e1d57cdb357e5b10f5fdacbb0b86689c0a435e6e",
-                "reference": "e1d57cdb357e5b10f5fdacbb0b86689c0a435e6e",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/4e7c98de67cc4171d4c986554e09a511da40f3d8",
+                "reference": "4e7c98de67cc4171d4c986554e09a511da40f3d8",
                 "shasum": ""
             },
             "require": {
@@ -1533,24 +1613,25 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2018-04-30T16:59:37+00:00"
+            "time": "2018-05-16T09:05:32+00:00"
         },
         {
             "name": "symfony/filesystem",
-            "version": "v4.0.9",
+            "version": "v4.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "5d2d655b2c72fc4d9bf7e9bf14f72a447b940f21"
+                "reference": "7a69e728e9f0044958c2fd7d72bfe5e7bd1a4d04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/5d2d655b2c72fc4d9bf7e9bf14f72a447b940f21",
-                "reference": "5d2d655b2c72fc4d9bf7e9bf14f72a447b940f21",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/7a69e728e9f0044958c2fd7d72bfe5e7bd1a4d04",
+                "reference": "7a69e728e9f0044958c2fd7d72bfe5e7bd1a4d04",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3"
+                "php": "^7.1.3",
+                "symfony/polyfill-ctype": "~1.8"
             },
             "type": "library",
             "extra": {
@@ -1582,7 +1663,62 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2018-02-22T10:50:29+00:00"
+            "time": "2018-05-16T09:05:32+00:00"
+        },
+        {
+            "name": "symfony/polyfill-ctype",
+            "version": "v1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-ctype.git",
+                "reference": "7cc359f1b7b80fc25ed7796be7d96adc9b354bae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/7cc359f1b7b80fc25ed7796be7d96adc9b354bae",
+                "reference": "7cc359f1b7b80fc25ed7796be7d96adc9b354bae",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                },
+                {
+                    "name": "Gert de Pagter",
+                    "email": "BackEndTea@gmail.com"
+                }
+            ],
+            "description": "Symfony polyfill for ctype functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "ctype",
+                "polyfill",
+                "portable"
+            ],
+            "time": "2018-04-30T19:57:29+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -1645,20 +1781,21 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.4.9",
+            "version": "v3.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "033cfa61ef06ee0847e056e530201842b6e926c3"
+                "reference": "c5010cc1692ce1fa328b1fb666961eb3d4a85bb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/033cfa61ef06ee0847e056e530201842b6e926c3",
-                "reference": "033cfa61ef06ee0847e056e530201842b6e926c3",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/c5010cc1692ce1fa328b1fb666961eb3d4a85bb0",
+                "reference": "c5010cc1692ce1fa328b1fb666961eb3d4a85bb0",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5.9|>=7.0.8"
+                "php": "^5.5.9|>=7.0.8",
+                "symfony/polyfill-ctype": "~1.8"
             },
             "conflict": {
                 "symfony/console": "<3.4"
@@ -1699,7 +1836,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2018-04-08T08:21:29+00:00"
+            "time": "2018-05-03T23:18:14+00:00"
         },
         {
             "name": "tsmsogn/acl-manager",
@@ -3543,16 +3680,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.9.3",
+            "version": "v0.9.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "79c280013cf0b30fa23f3ba8bd3649218075adf4"
+                "reference": "4d969a0e08e1e05e7207c07cb4207017ecc9a331"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/79c280013cf0b30fa23f3ba8bd3649218075adf4",
-                "reference": "79c280013cf0b30fa23f3ba8bd3649218075adf4",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/4d969a0e08e1e05e7207c07cb4207017ecc9a331",
+                "reference": "4d969a0e08e1e05e7207c07cb4207017ecc9a331",
                 "shasum": ""
             },
             "require": {
@@ -3564,9 +3701,9 @@
                 "symfony/var-dumper": "~2.7|~3.0|~4.0"
             },
             "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.2",
                 "hoa/console": "~2.15|~3.16",
-                "phpunit/phpunit": "~4.8.35|~5.0|~6.0|~7.0",
-                "symfony/finder": "~2.1|~3.0|~4.0"
+                "phpunit/phpunit": "~4.8.35|~5.0|~6.0|~7.0"
             },
             "suggest": {
                 "ext-pcntl": "Enabling the PCNTL extension makes PsySH a lot happier :)",
@@ -3611,7 +3748,7 @@
                 "interactive",
                 "shell"
             ],
-            "time": "2018-04-18T12:32:50+00:00"
+            "time": "2018-05-22T06:48:07+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -4366,16 +4503,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v4.0.9",
+            "version": "v4.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "ca27c02b7a3fef4828c998c2ff9ba7aae1641c49"
+                "reference": "8c633f5a815903a1fe6e3fc135f207267a8a79af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/ca27c02b7a3fef4828c998c2ff9ba7aae1641c49",
-                "reference": "ca27c02b7a3fef4828c998c2ff9ba7aae1641c49",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/8c633f5a815903a1fe6e3fc135f207267a8a79af",
+                "reference": "8c633f5a815903a1fe6e3fc135f207267a8a79af",
                 "shasum": ""
             },
             "require": {
@@ -4411,7 +4548,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2018-04-04T05:10:37+00:00"
+            "time": "2018-05-16T09:05:32+00:00"
         },
         {
             "name": "symfony/polyfill-php72",
@@ -4470,16 +4607,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v4.0.9",
+            "version": "v4.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "d7dc1ee5dfe9f732cb1bba7310f5b99f2b7a6d25"
+                "reference": "3621fa74d0576a6f89d63bc44fabd376711bd0b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/d7dc1ee5dfe9f732cb1bba7310f5b99f2b7a6d25",
-                "reference": "d7dc1ee5dfe9f732cb1bba7310f5b99f2b7a6d25",
+                "url": "https://api.github.com/repos/symfony/process/zipball/3621fa74d0576a6f89d63bc44fabd376711bd0b0",
+                "reference": "3621fa74d0576a6f89d63bc44fabd376711bd0b0",
                 "shasum": ""
             },
             "require": {
@@ -4515,11 +4652,11 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2018-04-03T05:24:00+00:00"
+            "time": "2018-05-16T09:05:32+00:00"
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v4.0.9",
+            "version": "v4.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",

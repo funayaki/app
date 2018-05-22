@@ -1,12 +1,12 @@
 <?php
 namespace App\Controller\Admin;
 
-use App\Controller\AppController;
+use App\Controller\Admin\AppController as BaseController;
 
 /**
  * Dashboards Controller
  */
-class DashboardsController extends AppController
+class DashboardsController extends BaseController
 {
 
     /**
