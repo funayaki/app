@@ -25,6 +25,7 @@
         "cakephp/cakephp": "3.5.*",
         "cakephp/migrations": "^1.0",
         "cakephp/plugin-installer": "^1.0",
+        "friendsofcake/crud": "^5.4",
         "friendsofcake/search": "^4.3",
         "funayaki/attachments": "dev-master",
         "funayaki/settings": "dev-master",
