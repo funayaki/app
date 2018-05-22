@@ -2,15 +2,26 @@
 namespace App\Controller\Admin;
 
 use App\Controller\AppController as BaseController;
+use Cake\Event\Event;
+use Cake\ORM\TableRegistry;
 use Crud\Controller\ControllerTrait;
+use Muffin\Footprint\Auth\FootprintAwareTrait;
 
 /**
  * @property \Crud\Controller\Component\CrudComponent $Crud
  */
 class AppController extends BaseController
 {
-
     use ControllerTrait;
+    use FootprintAwareTrait;
+
+    /**
+     * @var array
+     */
+    public $helpers = [
+        'Gourmet/KnpMenu.Menu',
+        'Breadcrumbs'
+    ];
 
     public function initialize()
     {
@@ -26,6 +37,7 @@ class AppController extends BaseController
                 ],
                 'add' => [
                     'className' => 'Crud.Add',
+                    'view' => 'form',
                     'messages' => [
                         'success' => [
                             'text' => __d('funayaki', 'The {name} has been saved.'),
@@ -37,6 +49,7 @@ class AppController extends BaseController
                 ],
                 'edit' => [
                     'className' => 'Crud.Edit',
+                    'view' => 'form',
                     'messages' => [
                         'success' => [
                             'text' => __d('funayaki', 'The {name} has been saved.'),
@@ -99,5 +112,20 @@ class AppController extends BaseController
     public function delete()
     {
         $this->Crud->execute();
+    }
+
+    /**
+     * @param Event $event
+     * @return void
+     */
+    public function beforeRender(Event $event)
+    {
+        $this->viewBuilder()->setTheme('Cirici/AdminLTE');
+
+        // Set logged in user info to viewVars
+        $currentUser = $this->_getCurrentUser();
+        if ($currentUser) {
+            $this->set('currentUser', TableRegistry::get('Users')->get($currentUser->id));
+        }
     }
 }

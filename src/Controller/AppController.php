@@ -17,9 +17,6 @@ namespace App\Controller;
 use Cake\Controller\Component\AuthComponent;
 use Cake\Controller\Controller;
 use Cake\Core\Configure;
-use Cake\Event\Event;
-use Cake\ORM\TableRegistry;
-use Muffin\Footprint\Auth\FootprintAwareTrait;
 
 /**
  * Application Controller
@@ -31,8 +28,6 @@ use Muffin\Footprint\Auth\FootprintAwareTrait;
  */
 class AppController extends Controller
 {
-    use FootprintAwareTrait;
-
     /**
      * Components
      *
@@ -42,17 +37,6 @@ class AppController extends Controller
         'Acl' => [
             'className' => 'Acl.Acl'
         ]
-    ];
-
-    /**
-     * {@inheritdoc}
-     *
-     * @var array
-     * @link http://book.cakephp.org/3.0/en/controllers.html#configuring-helpers-to-load
-     */
-    public $helpers = [
-        'Gourmet/KnpMenu.Menu',
-        'Breadcrumbs'
     ];
 
     /**
@@ -93,22 +77,5 @@ class AppController extends Controller
          */
         $this->loadComponent('Security');
         $this->loadComponent('Csrf');
-    }
-
-    /**
-     * @param Event $event
-     * @return void
-     */
-    public function beforeRender(Event $event)
-    {
-        if ($this->request->getParam('prefix') === 'admin') {
-            $this->viewBuilder()->setTheme('Cirici/AdminLTE');
-
-            // Set logged in user info to viewVars
-            $currentUser = $this->_getCurrentUser();
-            if ($currentUser) {
-                $this->set('currentUser', TableRegistry::get('Users')->get($currentUser->id));
-            }
-        }
     }
 }
