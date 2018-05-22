@@ -1,0 +1,69 @@
+Attachments:
+  uri: '#'
+  attributes:
+    icon: file
+  children:
+    Attachments:
+      uri: /admin/attachments/attachments
+      attributes:
+        icon: circle-o
+    Add attachment:
+      uri: /admin/attachments/attachments/add
+      attributes:
+        icon: circle-o
+
+Users:
+  uri: '#'
+  attributes:
+    icon: users
+  children:
+    Users:
+      uri: /admin/users
+      attributes:
+        icon: circle-o
+    Add user:
+      uri: /admin/users/add
+      attributes:
+        icon: circle-o
+
+Roles:
+  uri: '#'
+  attributes:
+    icon: suitcase
+  children:
+    Roles:
+      uri: /admin/roles
+      attributes:
+        icon: circle-o
+    Add role:
+      uri: /admin/roles/add
+      attributes:
+        icon: circle-o
+
+ACL:
+  uri: '#'
+  attributes:
+    icon: unlock-alt
+  children:
+    Permissions:
+      uri: /admin/acl_manager/aros
+      attributes:
+        icon: circle-o
+    Actions:
+      uri: /admin/acl_manager/acos
+      attributes:
+        icon: circle-o
+
+Settings:
+  uri: '#'
+  attributes:
+    icon: cogs
+  children:
+    Settings:
+      uri: /admin/settings/settings
+      attributes:
+        icon: circle-o
+    Add setting:
+      uri: /admin/settings/settings/add
+      attributes:
+        icon: circle-o

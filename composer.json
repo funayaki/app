@@ -15,6 +15,18 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/funayaki/bootstrap-ui"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/funayaki/cakephp-adminlte-theme"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/funayaki/cake-adminlte"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/funayaki/settings"
         }
     ],
@@ -27,10 +39,14 @@
         "cakephp/plugin-installer": "^1.0",
         "friendsofcake/crud": "^5.4",
         "friendsofcake/search": "^4.3",
+        "funayaki/adminlte": "dev-feature",
         "funayaki/attachments": "dev-master",
+        "funayaki/bootstrap-ui": "dev-adminlte",
+        "funayaki/cakephp-adminlte-theme": "dev-funayaki",
         "funayaki/settings": "dev-master",
         "josegonzalez/dotenv": "2.*",
         "mobiledetect/mobiledetectlib": "2.*",
+        "muffin/footprint": "^1.2",
         "oldskool/cakephp-js": "dev-master",
         "tsmsogn/acl-manager": "dev-master"
     },

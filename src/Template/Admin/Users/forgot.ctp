@@ -3,12 +3,15 @@
  * @var \App\View\AppView $this
  */
 ?>
-<div class="users form large-12 medium-12 columns content">
-    <?= $this->Form->create() ?>
-    <fieldset>
-        <legend><?= __('Please enter your username') ?></legend>
-        <?= $this->Form->control('username') ?>
-    </fieldset>
-    <?= $this->Form->button(__('Submit')); ?>
-    <?= $this->Form->end() ?>
+<?= $this->Flash->render() ?>
+<?= $this->Form->create(); ?>
+<?= $this->Form->control('username', ['label' => false, 'placeholder' => __('Username')]); ?>
+<div class="row">
+    <div class="col-xs-6">
+    </div>
+    <div class="col-xs-6">
+        <?= $this->Form->button(__('Reset Password'), ['class' => 'btn btn-primary btn-block btn-flat']); ?>
+    </div>
+    <!-- /.col -->
 </div>
+<?= $this->Form->end() ?>

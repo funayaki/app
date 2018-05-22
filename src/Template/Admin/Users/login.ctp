@@ -3,14 +3,18 @@
  * @var \App\View\AppView $this
  */
 ?>
-<div class="users form large-12 medium-12 columns content">
-    <?= $this->Form->create() ?>
-    <fieldset>
-        <legend><?= __('Please enter your username and password') ?></legend>
-        <?= $this->Form->control('username') ?>
-        <?= $this->Form->control('password') ?>
-    </fieldset>
-    <?= $this->Form->button(__('Login')); ?>
+<p class="login-box-msg">Sign in to start your session</p>
+<?= $this->Flash->render() ?>
+<?= $this->Form->create() ?>
+<?= $this->Form->control('username', ['label' => false, 'placeholder' => __('Username')]) ?>
+<?= $this->Form->control('password', ['label' => false, 'placeholder' => __('Password')]) ?>
+<div class="row">
+    <div class="col-xs-8">
+    </div>
+    <div class="col-xs-4">
+        <?= $this->Form->button(__('Sign In'), ['class' => 'btn btn-primary btn-block btn-flat']); ?>
+    </div>
+    <!-- /.col -->
     <?= $this->Form->end() ?>
-    <?= $this->Html->link('Forgot password?', ['action' => 'forgot']); ?>
 </div>
+<?= $this->Html->link('I forgot my password', ['action' => 'forgot']); ?>

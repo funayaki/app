@@ -62,6 +62,8 @@ class UsersController extends BaseController
      */
     public function add()
     {
+        $this->viewBuilder()->setTemplate('form');
+
         $user = $this->Users->newEntity();
         if ($this->request->is('post')) {
             $user = $this->Users->patchEntity($user, $this->request->getData());
@@ -85,6 +87,8 @@ class UsersController extends BaseController
      */
     public function edit($id = null)
     {
+        $this->viewBuilder()->setTemplate('form');
+
         $user = $this->Users->get($id, [
             'contain' => []
         ]);
@@ -108,6 +112,8 @@ class UsersController extends BaseController
      */
     public function login()
     {
+        $this->viewBuilder()->setLayout('Cirici/AdminLTE.login');
+
         if ($this->request->is('post')) {
             $user = $this->Auth->identify();
             if ($user) {
@@ -136,6 +142,8 @@ class UsersController extends BaseController
      */
     public function forgot()
     {
+        $this->viewBuilder()->setLayout('Cirici/AdminLTE.login');
+
         if ($this->request->is('post')) {
             $username = $this->request->getData('username');
 
@@ -170,6 +178,8 @@ class UsersController extends BaseController
      */
     public function reset($username = null, $token = null)
     {
+        $this->viewBuilder()->setLayout('Cirici/AdminLTE.login');
+
         $user = $this->Users
             ->find('active')
             ->find('admin')

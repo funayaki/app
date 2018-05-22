@@ -13,6 +13,7 @@
  */
 namespace App\View;
 
+use BootstrapUI\View\UIView;
 use Cake\View\View;
 
 /**
@@ -22,7 +23,7 @@ use Cake\View\View;
  *
  * @link https://book.cakephp.org/3.0/en/views.html#the-app-view
  */
-class AppView extends View
+class AppView extends UIView
 {
 
     /**
@@ -36,5 +37,11 @@ class AppView extends View
      */
     public function initialize()
     {
+        parent::initialize();
+
+        if (isset($this->viewVars['currentUser']) && $this->viewVars['currentUser']) {
+            $user = $this->viewVars['currentUser'];
+            $this->assign('AdminLTE.user.small', $user->name);
+        }
     }
 }

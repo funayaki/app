@@ -38,11 +38,14 @@ use Cake\Core\Plugin;
 use Cake\Database\Type;
 use Cake\Datasource\ConnectionManager;
 use Cake\Error\ErrorHandler;
+use Cake\Event\EventManager;
 use Cake\Http\ServerRequest;
 use Cake\Log\Log;
 use Cake\Mailer\Email;
+use Cake\Routing\Router;
 use Cake\Utility\Inflector;
 use Cake\Utility\Security;
+use Cirici\AdminLTE\Renderer\YamlMenuParser;
 
 /**
  * Uncomment block of code below if you want to use `.env` file during development.
@@ -219,8 +222,23 @@ Plugin::load('Acl', ['bootstrap' => true]);
 
 Plugin::load('AclManager', ['bootstrap' => true, 'routes' => true, 'autoload' => true]);
 
+Plugin::load('AdminLTE');
+
 Plugin::load('Attachments', ['bootstrap' => true, 'routes' => true, 'autoload' => true]);
+
+Plugin::load('BootstrapUI');
+
+Plugin::load('Cirici/AdminLTE', ['bootstrap' => true]);
 
 Plugin::load('Josegonzalez/Upload');
 
 Plugin::load('Settings', ['bootstrap' => true, 'routes' => true, 'autoload' => true]);
+
+// Settings
+Configure::write('AdminLTE.links.logout', Router::url(
+    ['plugin' => false, 'controller' => 'Users', 'action' => 'logout', 'prefix' => 'admin']
+));
+
+EventManager::instance()->on('AdminLTE.menu.sidebar', function ($event, $menu) {
+    $yaml = new YamlMenuParser($menu, 'admin_menu_sidebar.yaml');
+});

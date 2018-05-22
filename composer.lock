@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d7363dba6b2f4c303f346d3959bcc764",
+    "content-hash": "7cf48bb9bf2eb5b3f1d77f56d1fb7c94",
     "packages": [
         {
             "name": "admad/cakephp-sequence",
@@ -512,6 +512,53 @@
             "time": "2018-04-16T21:29:06+00:00"
         },
         {
+            "name": "funayaki/adminlte",
+            "version": "dev-feature",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/funayaki/cake-adminlte.git",
+                "reference": "e118cfc3f268cb659e8428200b1bf36757b7a067"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/funayaki/cake-adminlte/zipball/e118cfc3f268cb659e8428200b1bf36757b7a067",
+                "reference": "e118cfc3f268cb659e8428200b1bf36757b7a067",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "^3.3.6",
+                "gourmet/knp-menu": "~0.4",
+                "php": ">=5.5.9",
+                "symfony/yaml": "~3.0"
+            },
+            "require-dev": {
+                "cakephp/cakephp-codesniffer": "*",
+                "phpunit/phpunit": "^5.7|^6.0",
+                "squizlabs/php_codesniffer": "~2.6.0"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Cirici\\AdminLTE\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Cirici\\AdminLTE\\Test\\": "tests",
+                    "Cake\\Test\\": "./vendor/cakephp/cakephp/tests",
+                    "App\\": "tests/App"
+                }
+            },
+            "license": [
+                "GPL-3.0"
+            ],
+            "description": "AdminLTE theme for CakePHP",
+            "support": {
+                "source": "https://github.com/funayaki/cake-adminlte/tree/feature"
+            },
+            "time": "2018-05-21T07:18:33+00:00"
+        },
+        {
             "name": "funayaki/attachments",
             "version": "dev-master",
             "source": {
@@ -553,6 +600,117 @@
                 "issues": "https://github.com/funayaki/attachments/issues"
             },
             "time": "2018-05-10T05:24:03+00:00"
+        },
+        {
+            "name": "funayaki/bootstrap-ui",
+            "version": "dev-adminlte",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/funayaki/bootstrap-ui.git",
+                "reference": "c3e60482201a8655fce3cf46a03a92380ed1d522"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/funayaki/bootstrap-ui/zipball/c3e60482201a8655fce3cf46a03a92380ed1d522",
+                "reference": "c3e60482201a8655fce3cf46a03a92380ed1d522",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "^3.5"
+            },
+            "require-dev": {
+                "cakephp/chronos": "^1.1",
+                "phpunit/phpunit": "^5.7.14|^6.0"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "BootstrapUI\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "BootstrapUI\\Test\\": "tests",
+                    "TestApp\\": "tests/test_app/TestApp"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jad Bitar",
+                    "homepage": "http://jadb.io",
+                    "role": "Author"
+                },
+                {
+                    "name": "Others",
+                    "homepage": "https://github.com/friendsofcake/bootstrap-ui/graphs/contributors"
+                }
+            ],
+            "description": "Twitter Bootstrap 3 support for CakePHP 3",
+            "homepage": "http://github.com/funayaki/bootstrap-ui",
+            "keywords": [
+                "bootstrap",
+                "cakephp",
+                "twitter"
+            ],
+            "support": {
+                "issues": "http://github.com/funayaki/bootstrap-ui/issues",
+                "source": "http://github.com/funayaki/bootstrap-ui"
+            },
+            "time": "2018-05-11T08:43:15+00:00"
+        },
+        {
+            "name": "funayaki/cakephp-adminlte-theme",
+            "version": "dev-funayaki",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/funayaki/cakephp-adminlte-theme.git",
+                "reference": "ab9794a3438b4d6d4a3e7f86a21e2decbb8ea2c7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/funayaki/cakephp-adminlte-theme/zipball/ab9794a3438b4d6d4a3e7f86a21e2decbb8ea2c7",
+                "reference": "ab9794a3438b4d6d4a3e7f86a21e2decbb8ea2c7",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "~3.0",
+                "php": ">=5.4.16"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.1"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "AdminLTE\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maicon Pinto",
+                    "email": "maiconsilva.pinto@gmail.com",
+                    "homepage": "https://www.maiconpinto.com.br/",
+                    "role": "Author"
+                }
+            ],
+            "description": "CakePHP 3.x AdminLTE Theme.",
+            "homepage": "https://github.com/funayaki/cakephp-adminlte-theme",
+            "keywords": [
+                "cakephp",
+                "plugin",
+                "templates"
+            ],
+            "support": {
+                "issues": "https://github.com/funayaki/cakephp-adminlte-theme/issues",
+                "source": "https://github.com/funayaki/cakephp-adminlte-theme"
+            },
+            "time": "2018-05-09T08:11:50+00:00"
         },
         {
             "name": "funayaki/settings",
@@ -605,6 +763,53 @@
                 "source": "https://github.com/funayaki/settings/tree/master"
             },
             "time": "2018-05-21T09:34:53+00:00"
+        },
+        {
+            "name": "gourmet/knp-menu",
+            "version": "v0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gourmet/knp-menu.git",
+                "reference": "81d7102ac18982653761c6097e8da0bcb7e4672a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gourmet/knp-menu/zipball/81d7102ac18982653761c6097e8da0bcb7e4672a",
+                "reference": "81d7102ac18982653761c6097e8da0bcb7e4672a",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "~3.0",
+                "knplabs/knp-menu": "~2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Gourmet\\KnpMenu\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jad Bitar",
+                    "homepage": "http://jadb.io",
+                    "role": "Author"
+                }
+            ],
+            "description": "KnpMenu for CakePHP 3",
+            "homepage": "http://github.com/gourmet/knp-menu",
+            "keywords": [
+                "cakephp",
+                "knp",
+                "menu"
+            ],
+            "time": "2015-07-21T17:11:50+00:00"
         },
         {
             "name": "josegonzalez/cakephp-upload",
@@ -711,6 +916,70 @@
                 "php"
             ],
             "time": "2017-01-03T01:04:05+00:00"
+        },
+        {
+            "name": "knplabs/knp-menu",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KnpLabs/KnpMenu.git",
+                "reference": "655630a1db0b72108262d1a844de3b1ba0885be5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KnpLabs/KnpMenu/zipball/655630a1db0b72108262d1a844de3b1ba0885be5",
+                "reference": "655630a1db0b72108262d1a844de3b1ba0885be5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "psr/container": "^1.0",
+                "symfony/http-foundation": "~2.4|~3.0|^4.0",
+                "symfony/phpunit-bridge": "~3.3|^4.0",
+                "symfony/routing": "~2.3|~3.0|^4.0",
+                "twig/twig": "~1.16|~2.0"
+            },
+            "suggest": {
+                "twig/twig": "for the TwigRenderer and the integration with your templates"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Knp\\Menu\\": "src/Knp/Menu"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christophe Coevoet",
+                    "email": "stof@notk.org"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://github.com/KnpLabs/KnpMenu/contributors"
+                },
+                {
+                    "name": "KnpLabs",
+                    "homepage": "https://knplabs.com"
+                }
+            ],
+            "description": "An object oriented menu library",
+            "homepage": "https://knplabs.com",
+            "keywords": [
+                "menu",
+                "tree"
+            ],
+            "time": "2017-11-18T20:49:26+00:00"
         },
         {
             "name": "league/flysystem",
@@ -905,6 +1174,62 @@
                 "php mobile detect"
             ],
             "time": "2018-02-26T19:39:55+00:00"
+        },
+        {
+            "name": "muffin/footprint",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/UseMuffin/Footprint.git",
+                "reference": "eaebe58e60618fc8e67eae10b8a633ad8640f44b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/UseMuffin/Footprint/zipball/eaebe58e60618fc8e67eae10b8a633ad8640f44b",
+                "reference": "eaebe58e60618fc8e67eae10b8a633ad8640f44b",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "^3.5"
+            },
+            "require-dev": {
+                "cakephp/cakephp-codesniffer": "^3.0",
+                "phpunit/phpunit": "^5.7.14|^6.0"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Muffin\\Footprint\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jad Bitar",
+                    "homepage": "http://jadb.io",
+                    "role": "Author"
+                },
+                {
+                    "name": "ADmad",
+                    "homepage": "https://github.com/ADmad",
+                    "role": "Author"
+                },
+                {
+                    "name": "Others",
+                    "homepage": "https://github.com/usemuffin/footprint/graphs/contributors"
+                }
+            ],
+            "description": "CakePHP 3.0+ plugin to allow passing currently logged in user to model layer",
+            "homepage": "https://github.com/usemuffin/footprint",
+            "keywords": [
+                "cakephp",
+                "footprint",
+                "muffin"
+            ],
+            "time": "2018-04-15T16:33:18+00:00"
         },
         {
             "name": "oldskool/cakephp-js",
@@ -3355,16 +3680,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.9.3",
+            "version": "v0.9.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "79c280013cf0b30fa23f3ba8bd3649218075adf4"
+                "reference": "4d969a0e08e1e05e7207c07cb4207017ecc9a331"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/79c280013cf0b30fa23f3ba8bd3649218075adf4",
-                "reference": "79c280013cf0b30fa23f3ba8bd3649218075adf4",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/4d969a0e08e1e05e7207c07cb4207017ecc9a331",
+                "reference": "4d969a0e08e1e05e7207c07cb4207017ecc9a331",
                 "shasum": ""
             },
             "require": {
@@ -3376,9 +3701,9 @@
                 "symfony/var-dumper": "~2.7|~3.0|~4.0"
             },
             "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.2",
                 "hoa/console": "~2.15|~3.16",
-                "phpunit/phpunit": "~4.8.35|~5.0|~6.0|~7.0",
-                "symfony/finder": "~2.1|~3.0|~4.0"
+                "phpunit/phpunit": "~4.8.35|~5.0|~6.0|~7.0"
             },
             "suggest": {
                 "ext-pcntl": "Enabling the PCNTL extension makes PsySH a lot happier :)",
@@ -3423,7 +3748,7 @@
                 "interactive",
                 "shell"
             ],
-            "time": "2018-04-18T12:32:50+00:00"
+            "time": "2018-05-22T06:48:07+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -4656,7 +4981,10 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "funayaki/adminlte": 20,
         "funayaki/attachments": 20,
+        "funayaki/bootstrap-ui": 20,
+        "funayaki/cakephp-adminlte-theme": 20,
         "funayaki/settings": 20,
         "oldskool/cakephp-js": 20,
         "tsmsogn/acl-manager": 20,

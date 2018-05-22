@@ -16,6 +16,7 @@ namespace App\Controller;
 
 use Cake\Controller\Component\AuthComponent;
 use Cake\Controller\Controller;
+use Cake\Core\Configure;
 
 /**
  * Application Controller
@@ -68,6 +69,7 @@ class AppController extends Controller
                 'Acl.Actions',
             ],
         ]);
+        $this->loadComponent('Gourmet/KnpMenu.Menu');
 
         /*
          * Enable the following components for recommended CakePHP security settings.
