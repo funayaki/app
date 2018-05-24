@@ -7,7 +7,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/tsmsogn/acl-manager"
+            "url": "https://github.com/funayaki/acl-manager"
         },
         {
             "type": "vcs",
@@ -48,7 +48,7 @@
         "mobiledetect/mobiledetectlib": "2.*",
         "muffin/footprint": "^1.2",
         "oldskool/cakephp-js": "dev-master",
-        "tsmsogn/acl-manager": "dev-master"
+        "funayaki/acl-manager": "dev-master"
     },
     "require-dev": {
         "cakephp/bake": "^1.1",

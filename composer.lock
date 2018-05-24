@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7cf48bb9bf2eb5b3f1d77f56d1fb7c94",
+    "content-hash": "aeb48a23a96519706aa346a0212e1941",
     "packages": [
         {
             "name": "admad/cakephp-sequence",
@@ -510,6 +510,54 @@
                 "search"
             ],
             "time": "2018-04-16T21:29:06+00:00"
+        },
+        {
+            "name": "funayaki/acl-manager",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/funayaki/acl-manager.git",
+                "reference": "7c569fe46bdf70ed331600172cdccd6c44e2420f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/funayaki/acl-manager/zipball/7c569fe46bdf70ed331600172cdccd6c44e2420f",
+                "reference": "7c569fe46bdf70ed331600172cdccd6c44e2420f",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/acl": "^0.2.6",
+                "cakephp/cakephp": "^3.5.0",
+                "oldskool/cakephp-js": "dev-master",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "cakephp/cakephp-codesniffer": "^3.0",
+                "phpunit/phpunit": "^5.7|^6.0"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "AclManager\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "AclManager\\Test\\": "tests",
+                    "App\\": "tests/test_app/src/",
+                    "Cake\\Test\\": "vendor/cakephp/cakephp/tests"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "This CakePHP plugin is an interface to manage an ACL protected web application.",
+            "homepage": "http://www.alaxos.ch/blaxos/pages/view/34",
+            "support": {
+                "source": "https://github.com/funayaki/acl-manager/tree/master",
+                "issues": "https://github.com/funayaki/acl-manager/issues"
+            },
+            "time": "2018-05-24T02:52:54+00:00"
         },
         {
             "name": "funayaki/adminlte",
@@ -1837,54 +1885,6 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2018-05-03T23:18:14+00:00"
-        },
-        {
-            "name": "tsmsogn/acl-manager",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tsmsogn/acl-manager.git",
-                "reference": "4bf16ce936c3fe46d41a6d4796949967368c004b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tsmsogn/acl-manager/zipball/4bf16ce936c3fe46d41a6d4796949967368c004b",
-                "reference": "4bf16ce936c3fe46d41a6d4796949967368c004b",
-                "shasum": ""
-            },
-            "require": {
-                "cakephp/acl": "^0.2.6",
-                "cakephp/cakephp": "^3.5.0",
-                "oldskool/cakephp-js": "dev-master",
-                "php": ">=5.6"
-            },
-            "require-dev": {
-                "cakephp/cakephp-codesniffer": "^3.0",
-                "phpunit/phpunit": "^5.7|^6.0"
-            },
-            "type": "cakephp-plugin",
-            "autoload": {
-                "psr-4": {
-                    "AclManager\\": "src"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "AclManager\\Test\\": "tests",
-                    "App\\": "tests/test_app/src/",
-                    "Cake\\Test\\": "vendor/cakephp/cakephp/tests"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "description": "This CakePHP plugin is an interface to manage an ACL protected web application.",
-            "homepage": "http://www.alaxos.ch/blaxos/pages/view/34",
-            "support": {
-                "source": "https://github.com/tsmsogn/acl-manager/tree/master",
-                "issues": "https://github.com/tsmsogn/acl-manager/issues"
-            },
-            "time": "2018-04-26T02:30:26+00:00"
         },
         {
             "name": "zendframework/zend-diactoros",
@@ -4987,7 +4987,7 @@
         "funayaki/cakephp-adminlte-theme": 20,
         "funayaki/settings": 20,
         "oldskool/cakephp-js": 20,
-        "tsmsogn/acl-manager": 20,
+        "funayaki/acl-manager": 20,
         "psy/psysh": 0
     },
     "prefer-stable": true,
