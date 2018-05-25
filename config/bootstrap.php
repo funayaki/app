@@ -234,9 +234,11 @@ Plugin::load('Josegonzalez/Upload');
 
 Plugin::load('Settings', ['bootstrap' => true, 'routes' => true, 'autoload' => true]);
 
+Plugin::load('Users', ['bootstrap' => true, 'routes' => true, 'autoload' => true]);
+
 // Settings
 Configure::write('AdminLTE.links.logout', Router::url(
-    ['plugin' => false, 'controller' => 'Users', 'action' => 'logout', 'prefix' => 'admin']
+    ['plugin' => 'Users', 'controller' => 'Users', 'action' => 'logout', 'prefix' => 'admin']
 ));
 
 EventManager::instance()->on('AdminLTE.menu.sidebar', function ($event, $menu) {

@@ -55,9 +55,15 @@ class AppController extends Controller
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
         $this->loadComponent('Auth', [
+            'loginAction' => [
+                'controller' => 'Users',
+                'action' => 'login',
+                'plugin' => 'Users'
+            ],
             'authError' => 'You are not authorized to access that location.',
             'authenticate' => [
                 AuthComponent::ALL => [
+                    'userModel' => 'Users.Users',
                     'finder' => 'auth'
                 ],
                 'Form',
@@ -69,7 +75,6 @@ class AppController extends Controller
                 'Acl.Actions',
             ],
         ]);
-        $this->loadComponent('Gourmet/KnpMenu.Menu');
 
         /*
          * Enable the following components for recommended CakePHP security settings.

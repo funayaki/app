@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "aeb48a23a96519706aa346a0212e1941",
+    "content-hash": "c9f9891e93d74795c025d47a4eb6ebf6",
     "packages": [
         {
             "name": "admad/cakephp-sequence",
@@ -517,12 +517,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/funayaki/acl-manager.git",
-                "reference": "7c569fe46bdf70ed331600172cdccd6c44e2420f"
+                "reference": "76ffa42e256c22f66774c1ca47934c39d0dfe8aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/funayaki/acl-manager/zipball/7c569fe46bdf70ed331600172cdccd6c44e2420f",
-                "reference": "7c569fe46bdf70ed331600172cdccd6c44e2420f",
+                "url": "https://api.github.com/repos/funayaki/acl-manager/zipball/76ffa42e256c22f66774c1ca47934c39d0dfe8aa",
+                "reference": "76ffa42e256c22f66774c1ca47934c39d0dfe8aa",
                 "shasum": ""
             },
             "require": {
@@ -557,7 +557,7 @@
                 "source": "https://github.com/funayaki/acl-manager/tree/master",
                 "issues": "https://github.com/funayaki/acl-manager/issues"
             },
-            "time": "2018-05-24T02:52:54+00:00"
+            "time": "2018-05-25T02:02:46+00:00"
         },
         {
             "name": "funayaki/adminlte",
@@ -811,6 +811,50 @@
                 "source": "https://github.com/funayaki/settings/tree/master"
             },
             "time": "2018-05-21T09:34:53+00:00"
+        },
+        {
+            "name": "funayaki/users",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/funayaki/users.git",
+                "reference": "df62cdf22181a42d55cb59f5209b03794913262d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/funayaki/users/zipball/df62cdf22181a42d55cb59f5209b03794913262d",
+                "reference": "df62cdf22181a42d55cb59f5209b03794913262d",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "^3.4",
+                "friendsofcake/crud": "^5.4",
+                "funayaki/acl-manager": "dev-master"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7|^6.0"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Users\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Users\\Test\\": "tests",
+                    "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Users plugin for CakePHP",
+            "support": {
+                "source": "https://github.com/funayaki/users/tree/master",
+                "issues": "https://github.com/funayaki/users/issues"
+            },
+            "time": "2018-05-25T03:22:09+00:00"
         },
         {
             "name": "gourmet/knp-menu",
@@ -4981,13 +5025,14 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "funayaki/acl-manager": 20,
         "funayaki/adminlte": 20,
         "funayaki/attachments": 20,
         "funayaki/bootstrap-ui": 20,
         "funayaki/cakephp-adminlte-theme": 20,
         "funayaki/settings": 20,
+        "funayaki/users": 20,
         "oldskool/cakephp-js": 20,
-        "funayaki/acl-manager": 20,
         "psy/psysh": 0
     },
     "prefer-stable": true,

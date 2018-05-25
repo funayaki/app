@@ -18,11 +18,11 @@ Users:
     icon: users
   children:
     Users:
-      uri: /admin/users
+      uri: /admin/users/users
       attributes:
         icon: circle-o
     Add user:
-      uri: /admin/users/add
+      uri: /admin/users/users/add
       attributes:
         icon: circle-o
 
@@ -32,11 +32,11 @@ Roles:
     icon: suitcase
   children:
     Roles:
-      uri: /admin/roles
+      uri: /admin/users/roles
       attributes:
         icon: circle-o
     Add role:
-      uri: /admin/roles/add
+      uri: /admin/users/roles/add
       attributes:
         icon: circle-o
 
