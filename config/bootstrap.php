@@ -239,9 +239,10 @@ Plugin::load('Taxonomy', ['bootstrap' => true, 'routes' => true, 'autoload' => t
 Plugin::load('Users', ['bootstrap' => true, 'routes' => true, 'autoload' => true]);
 
 // Settings
-Configure::write('AdminLTE.links.logout', Router::url(
-    ['plugin' => 'Users', 'controller' => 'Users', 'action' => 'logout', 'prefix' => 'admin']
-));
+Configure::write('AdminLTE.links.logout', '/admin/users/users/logout');
+//Configure::write('AdminLTE.links.logout', Router::url(
+//    ['plugin' => 'Users', 'controller' => 'Users', 'action' => 'logout', 'prefix' => 'admin']
+//));
 
 EventManager::instance()->on('AdminLTE.menu.sidebar', function ($event, $menu) {
     $yaml = new YamlMenuParser($menu, 'admin_menu_sidebar.yaml');
