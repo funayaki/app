@@ -48,6 +48,11 @@ class AppController extends Controller
                 'action' => 'login',
                 'plugin' => 'Users'
             ],
+            'loginRedirect' => [
+                'controller' => 'Dashboards',
+                'action' => 'index',
+                'plugin' => null
+            ],
             'authError' => 'You are not authorized to access that location.',
             'authenticate' => [
                 AuthComponent::ALL => [
