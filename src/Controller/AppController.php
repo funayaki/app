@@ -14,7 +14,6 @@
  */
 namespace App\Controller;
 
-use Cake\Controller\Component\AuthComponent;
 use Cake\Controller\Controller;
 use Cake\Core\Configure;
 
@@ -28,16 +27,6 @@ use Cake\Core\Configure;
  */
 class AppController extends Controller
 {
-    /**
-     * Components
-     *
-     * @var array
-     */
-    public $components = [
-        'Acl' => [
-            'className' => 'Acl.Acl'
-        ]
-    ];
 
     /**
      * Initialization hook method.
@@ -54,27 +43,6 @@ class AppController extends Controller
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
-        $this->loadComponent('Auth', [
-            'loginAction' => [
-                'controller' => 'Users',
-                'action' => 'login',
-                'plugin' => 'Users'
-            ],
-            'authError' => 'You are not authorized to access that location.',
-            'authenticate' => [
-                AuthComponent::ALL => [
-                    'userModel' => 'Users.Users',
-                    'finder' => 'auth'
-                ],
-                'Form',
-            ],
-            'authorize' => [
-                AuthComponent::ALL => [
-                    'actionPath' => 'controllers/'
-                ],
-                'Acl.Actions',
-            ],
-        ]);
 
         /*
          * Enable the following components for recommended CakePHP security settings.
