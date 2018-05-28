@@ -31,6 +31,10 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/funayaki/taxonomy"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/funayaki/users"
         }
     ],
@@ -49,6 +53,7 @@
         "funayaki/bootstrap-ui": "dev-adminlte",
         "funayaki/cakephp-adminlte-theme": "dev-funayaki",
         "funayaki/settings": "dev-master",
+        "funayaki/taxonomy": "dev-master",
         "funayaki/users": "dev-master",
         "josegonzalez/dotenv": "2.*",
         "mobiledetect/mobiledetectlib": "2.*",

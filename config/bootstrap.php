@@ -234,6 +234,8 @@ Plugin::load('Josegonzalez/Upload');
 
 Plugin::load('Settings', ['bootstrap' => true, 'routes' => true, 'autoload' => true]);
 
+Plugin::load('Taxonomy', ['bootstrap' => true, 'routes' => true, 'autoload' => true]);
+
 Plugin::load('Users', ['bootstrap' => true, 'routes' => true, 'autoload' => true]);
 
 // Settings

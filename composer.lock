@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c9f9891e93d74795c025d47a4eb6ebf6",
+    "content-hash": "f8f11f4a99111fd1297858becc3a5958",
     "packages": [
         {
             "name": "admad/cakephp-sequence",
@@ -377,6 +377,53 @@
             "time": "2017-12-24T21:09:29+00:00"
         },
         {
+            "name": "croogo/core",
+            "version": "3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/croogo/core.git",
+                "reference": "08c38e97168d36cc234049e7196049a74021a074"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/croogo/core/zipball/08c38e97168d36cc234049e7196049a74021a074",
+                "reference": "08c38e97168d36cc234049e7196049a74021a074",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "^3.5.5"
+            },
+            "require-dev": {
+                "cakephp/cakephp-codesniffer": "dev-master",
+                "friendsofcake/cakephp-test-utilities": "dev-master",
+                "phpunit/phpunit": "4.1.*"
+            },
+            "suggest": {
+                "croogo/example": "Example Croogo plugin"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Croogo\\Core\\": "src"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Croogo Development Team",
+                    "email": "team@croogo.org"
+                }
+            ],
+            "description": "Croogo Core Plugin",
+            "time": "2017-12-06T05:03:44+00:00"
+        },
+        {
             "name": "friendsofcake/crud",
             "version": "5.4.2",
             "source": {
@@ -565,12 +612,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/funayaki/cake-adminlte.git",
-                "reference": "e118cfc3f268cb659e8428200b1bf36757b7a067"
+                "reference": "7097d0dd03f71bedb68b94a66ab8041018eaf68e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/funayaki/cake-adminlte/zipball/e118cfc3f268cb659e8428200b1bf36757b7a067",
-                "reference": "e118cfc3f268cb659e8428200b1bf36757b7a067",
+                "url": "https://api.github.com/repos/funayaki/cake-adminlte/zipball/7097d0dd03f71bedb68b94a66ab8041018eaf68e",
+                "reference": "7097d0dd03f71bedb68b94a66ab8041018eaf68e",
                 "shasum": ""
             },
             "require": {
@@ -604,7 +651,7 @@
             "support": {
                 "source": "https://github.com/funayaki/cake-adminlte/tree/feature"
             },
-            "time": "2018-05-21T07:18:33+00:00"
+            "time": "2018-05-28T00:56:16+00:00"
         },
         {
             "name": "funayaki/attachments",
@@ -766,35 +813,24 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/funayaki/settings.git",
-                "reference": "4001880c8ce5cd135f69a21335fead6faaf2e23e"
+                "reference": "7f30a3ced485591f58f53ce22fd062184ad89f4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/funayaki/settings/zipball/4001880c8ce5cd135f69a21335fead6faaf2e23e",
-                "reference": "4001880c8ce5cd135f69a21335fead6faaf2e23e",
+                "url": "https://api.github.com/repos/funayaki/settings/zipball/7f30a3ced485591f58f53ce22fd062184ad89f4d",
+                "reference": "7f30a3ced485591f58f53ce22fd062184ad89f4d",
                 "shasum": ""
             },
             "require": {
-                "admad/cakephp-sequence": "^2.1",
-                "cakephp/cakephp": "~3.5.0",
-                "friendsofcake/search": "^4.3",
-                "php": ">=5.6"
-            },
-            "require-dev": {
-                "cakephp/cakephp-codesniffer": "^3.0",
-                "phpunit/phpunit": "^5.7|^6.0"
+                "admad/cakephp-sequence": "^2.2",
+                "croogo/core": "^3.0.1",
+                "friendsofcake/crud": "^5.4",
+                "friendsofcake/search": "^4.4"
             },
             "type": "cakephp-plugin",
             "autoload": {
                 "psr-4": {
                     "Settings\\": "src"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "Settings\\Test\\": "tests",
-                    "App\\": "tests/test_app/src/",
-                    "Cake\\Test\\": "vendor/cakephp/cakephp/tests"
                 }
             },
             "license": [
@@ -810,7 +846,47 @@
             "support": {
                 "source": "https://github.com/funayaki/settings/tree/master"
             },
-            "time": "2018-05-21T09:34:53+00:00"
+            "time": "2018-05-28T06:27:26+00:00"
+        },
+        {
+            "name": "funayaki/taxonomy",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/funayaki/taxonomy.git",
+                "reference": "fff53024d95b917b7328cbe9bcfe76791c773652"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/funayaki/taxonomy/zipball/fff53024d95b917b7328cbe9bcfe76791c773652",
+                "reference": "fff53024d95b917b7328cbe9bcfe76791c773652",
+                "shasum": ""
+            },
+            "require": {
+                "admad/cakephp-sequence": "^2.2",
+                "croogo/core": "^3.0.1",
+                "friendsofcake/crud": "^5.4"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Taxonomy\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Croogo Development Team",
+                    "email": "team@croogo.org"
+                }
+            ],
+            "description": "Croogo Taxonomy Plugin",
+            "support": {
+                "source": "https://github.com/funayaki/taxonomy/tree/master"
+            },
+            "time": "2018-05-28T06:34:31+00:00"
         },
         {
             "name": "funayaki/users",
@@ -818,12 +894,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/funayaki/users.git",
-                "reference": "df62cdf22181a42d55cb59f5209b03794913262d"
+                "reference": "3fe261d6e8ab217bb24524c46430db68b3d76b43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/funayaki/users/zipball/df62cdf22181a42d55cb59f5209b03794913262d",
-                "reference": "df62cdf22181a42d55cb59f5209b03794913262d",
+                "url": "https://api.github.com/repos/funayaki/users/zipball/3fe261d6e8ab217bb24524c46430db68b3d76b43",
+                "reference": "3fe261d6e8ab217bb24524c46430db68b3d76b43",
                 "shasum": ""
             },
             "require": {
@@ -854,7 +930,7 @@
                 "source": "https://github.com/funayaki/users/tree/master",
                 "issues": "https://github.com/funayaki/users/issues"
             },
-            "time": "2018-05-25T03:22:09+00:00"
+            "time": "2018-05-28T00:55:19+00:00"
         },
         {
             "name": "gourmet/knp-menu",
@@ -1520,7 +1596,7 @@
         },
         {
             "name": "symfony/config",
-            "version": "v3.4.10",
+            "version": "v3.4.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
@@ -1584,7 +1660,7 @@
         },
         {
             "name": "symfony/console",
-            "version": "v3.4.10",
+            "version": "v3.4.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
@@ -1653,7 +1729,7 @@
         },
         {
             "name": "symfony/debug",
-            "version": "v4.0.10",
+            "version": "v4.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
@@ -1709,7 +1785,7 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v4.0.10",
+            "version": "v4.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
@@ -1873,7 +1949,7 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.4.10",
+            "version": "v3.4.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
@@ -4547,7 +4623,7 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v4.0.10",
+            "version": "v4.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
@@ -4651,7 +4727,7 @@
         },
         {
             "name": "symfony/process",
-            "version": "v4.0.10",
+            "version": "v4.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
@@ -4700,7 +4776,7 @@
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v4.0.10",
+            "version": "v4.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
@@ -5031,6 +5107,7 @@
         "funayaki/bootstrap-ui": 20,
         "funayaki/cakephp-adminlte-theme": 20,
         "funayaki/settings": 20,
+        "funayaki/taxonomy": 20,
         "funayaki/users": 20,
         "oldskool/cakephp-js": 20,
         "psy/psysh": 0
