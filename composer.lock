@@ -659,12 +659,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/funayaki/attachments.git",
-                "reference": "b7fbd450a25fa594a75aa0012c7bae7bc5260094"
+                "reference": "7a7327d6b5dd36ea32702ad1602cb393999f8b01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/funayaki/attachments/zipball/b7fbd450a25fa594a75aa0012c7bae7bc5260094",
-                "reference": "b7fbd450a25fa594a75aa0012c7bae7bc5260094",
+                "url": "https://api.github.com/repos/funayaki/attachments/zipball/7a7327d6b5dd36ea32702ad1602cb393999f8b01",
+                "reference": "7a7327d6b5dd36ea32702ad1602cb393999f8b01",
                 "shasum": ""
             },
             "require": {
@@ -694,7 +694,7 @@
                 "source": "https://github.com/funayaki/attachments/tree/master",
                 "issues": "https://github.com/funayaki/attachments/issues"
             },
-            "time": "2018-05-10T05:24:03+00:00"
+            "time": "2018-05-29T05:17:41+00:00"
         },
         {
             "name": "funayaki/bootstrap-ui",
@@ -813,12 +813,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/funayaki/settings.git",
-                "reference": "7f30a3ced485591f58f53ce22fd062184ad89f4d"
+                "reference": "ace2d22860db424c6a73f6835906fa4cb014d61a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/funayaki/settings/zipball/7f30a3ced485591f58f53ce22fd062184ad89f4d",
-                "reference": "7f30a3ced485591f58f53ce22fd062184ad89f4d",
+                "url": "https://api.github.com/repos/funayaki/settings/zipball/ace2d22860db424c6a73f6835906fa4cb014d61a",
+                "reference": "ace2d22860db424c6a73f6835906fa4cb014d61a",
                 "shasum": ""
             },
             "require": {
@@ -846,7 +846,7 @@
             "support": {
                 "source": "https://github.com/funayaki/settings/tree/master"
             },
-            "time": "2018-05-28T06:27:26+00:00"
+            "time": "2018-05-29T07:11:02+00:00"
         },
         {
             "name": "funayaki/taxonomy",
@@ -894,12 +894,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/funayaki/users.git",
-                "reference": "3fe261d6e8ab217bb24524c46430db68b3d76b43"
+                "reference": "e0d8754264254488e40dd4934d922f103e1992f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/funayaki/users/zipball/3fe261d6e8ab217bb24524c46430db68b3d76b43",
-                "reference": "3fe261d6e8ab217bb24524c46430db68b3d76b43",
+                "url": "https://api.github.com/repos/funayaki/users/zipball/e0d8754264254488e40dd4934d922f103e1992f0",
+                "reference": "e0d8754264254488e40dd4934d922f103e1992f0",
                 "shasum": ""
             },
             "require": {
@@ -930,7 +930,7 @@
                 "source": "https://github.com/funayaki/users/tree/master",
                 "issues": "https://github.com/funayaki/users/issues"
             },
-            "time": "2018-05-28T00:55:19+00:00"
+            "time": "2018-05-28T06:57:40+00:00"
         },
         {
             "name": "gourmet/knp-menu",
