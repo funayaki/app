@@ -43,9 +43,11 @@ use Cake\Http\ServerRequest;
 use Cake\Log\Log;
 use Cake\Mailer\Email;
 use Cake\Routing\Router;
+use Cake\Utility\Hash;
 use Cake\Utility\Inflector;
 use Cake\Utility\Security;
 use Cirici\AdminLTE\Renderer\YamlMenuParser;
+use Settings\Configure\Engine\DatabaseConfig;
 
 /**
  * Uncomment block of code below if you want to use `.env` file during development.
@@ -238,11 +240,7 @@ Plugin::load('Taxonomy', ['bootstrap' => true, 'routes' => true, 'autoload' => t
 
 Plugin::load('Users', ['bootstrap' => true, 'routes' => true, 'autoload' => true]);
 
-// Settings
-Configure::write('AdminLTE.links.logout', '/admin/users/users/logout');
-//Configure::write('AdminLTE.links.logout', Router::url(
-//    ['plugin' => 'Users', 'controller' => 'Users', 'action' => 'logout', 'prefix' => 'admin']
-//));
+Configure::write(Hash::merge(Configure::read(), (new DatabaseConfig())->read(time())));
 
 EventManager::instance()->on('AdminLTE.menu.sidebar', function ($event, $menu) {
     $yaml = new YamlMenuParser($menu, 'admin_menu_sidebar.yaml');
