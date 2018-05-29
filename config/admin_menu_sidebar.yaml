@@ -1,3 +1,13 @@
+Taxonomy:
+  uri: '#'
+  attributes:
+    icon: tags
+  children:
+    Vocabularies:
+      uri: /admin/taxonomy/vocabularies
+      attributes:
+        icon: circle-o
+
 Attachments:
   uri: '#'
   attributes:
@@ -21,36 +31,12 @@ Users:
       uri: /admin/users/users
       attributes:
         icon: circle-o
-    Add user:
-      uri: /admin/users/users/add
-      attributes:
-        icon: circle-o
-
-Roles:
-  uri: '#'
-  attributes:
-    icon: suitcase
-  children:
     Roles:
       uri: /admin/users/roles
       attributes:
         icon: circle-o
-    Add role:
-      uri: /admin/users/roles/add
-      attributes:
-        icon: circle-o
-
-ACL:
-  uri: '#'
-  attributes:
-    icon: unlock-alt
-  children:
     Permissions:
-      uri: /admin/acl_manager/aros
-      attributes:
-        icon: circle-o
-    Actions:
-      uri: /admin/acl_manager/acos
+      uri: /admin/acl_manager/aros/role_permissions
       attributes:
         icon: circle-o
 
