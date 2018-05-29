@@ -53,3 +53,7 @@ Settings:
       uri: /admin/settings/settings/add
       attributes:
         icon: circle-o
+    Caches:
+      uri: /admin/settings/caches
+      attributes:
+        icon: circle-o
