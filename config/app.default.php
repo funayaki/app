@@ -118,6 +118,17 @@ return [
             'duration' => '+1 years',
             'url' => env('CACHE_CAKEMODEL_URL', null),
         ],
+
+        /**
+         * Configure the cache for settings.
+         */
+        'cached_settings' => [
+            'className' => 'File',
+            'path' => CACHE . 'settings/',
+            'serialize' => true,
+            'duration' => '+1 years',
+            'url' => env('CACHE_SETTINGS_URL', null),
+        ],
     ],
 
     /**
@@ -352,6 +363,6 @@ return [
      * To use database sessions, load the SQL file located at config/schema/sessions.sql
      */
     'Session' => [
-        'defaults' => 'php',
+        'defaults' => 'database',
     ],
 ];
