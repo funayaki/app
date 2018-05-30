@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f8f11f4a99111fd1297858becc3a5958",
+    "content-hash": "b3689c576c09092da504701666bea44f",
     "packages": [
         {
             "name": "admad/cakephp-sequence",
@@ -654,17 +654,17 @@
             "time": "2018-05-28T00:56:16+00:00"
         },
         {
-            "name": "funayaki/attachments",
+            "name": "funayaki/assets",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/funayaki/attachments.git",
-                "reference": "7a7327d6b5dd36ea32702ad1602cb393999f8b01"
+                "url": "https://github.com/funayaki/assets.git",
+                "reference": "9d33505e88d9a28eee40170c583ea2ee4cf422e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/funayaki/attachments/zipball/7a7327d6b5dd36ea32702ad1602cb393999f8b01",
-                "reference": "7a7327d6b5dd36ea32702ad1602cb393999f8b01",
+                "url": "https://api.github.com/repos/funayaki/assets/zipball/9d33505e88d9a28eee40170c583ea2ee4cf422e6",
+                "reference": "9d33505e88d9a28eee40170c583ea2ee4cf422e6",
                 "shasum": ""
             },
             "require": {
@@ -677,24 +677,24 @@
             "type": "cakephp-plugin",
             "autoload": {
                 "psr-4": {
-                    "Attachments\\": "src"
+                    "Assets\\": "src"
                 }
             },
             "autoload-dev": {
                 "psr-4": {
-                    "Attachments\\Test\\": "tests",
+                    "Assets\\Test\\": "tests",
                     "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
                 }
             },
             "license": [
                 "MIT"
             ],
-            "description": "Attachments plugin for CakePHP",
+            "description": "Assets plugin for CakePHP",
             "support": {
-                "source": "https://github.com/funayaki/attachments/tree/master",
-                "issues": "https://github.com/funayaki/attachments/issues"
+                "source": "https://github.com/funayaki/assets/tree/master",
+                "issues": "https://github.com/funayaki/assets/issues"
             },
-            "time": "2018-05-29T05:17:41+00:00"
+            "time": "2018-05-30T03:56:05+00:00"
         },
         {
             "name": "funayaki/bootstrap-ui",
@@ -813,12 +813,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/funayaki/settings.git",
-                "reference": "ace2d22860db424c6a73f6835906fa4cb014d61a"
+                "reference": "2a3e12df3ac5a9f3ff323c5caa7ba90d8bd94d4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/funayaki/settings/zipball/ace2d22860db424c6a73f6835906fa4cb014d61a",
-                "reference": "ace2d22860db424c6a73f6835906fa4cb014d61a",
+                "url": "https://api.github.com/repos/funayaki/settings/zipball/2a3e12df3ac5a9f3ff323c5caa7ba90d8bd94d4c",
+                "reference": "2a3e12df3ac5a9f3ff323c5caa7ba90d8bd94d4c",
                 "shasum": ""
             },
             "require": {
@@ -846,7 +846,7 @@
             "support": {
                 "source": "https://github.com/funayaki/settings/tree/master"
             },
-            "time": "2018-05-29T07:11:02+00:00"
+            "time": "2018-05-30T00:12:24+00:00"
         },
         {
             "name": "funayaki/taxonomy",
@@ -894,12 +894,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/funayaki/users.git",
-                "reference": "e0d8754264254488e40dd4934d922f103e1992f0"
+                "reference": "fb95ab9835398ba5eb4192cc52433150c40dd6bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/funayaki/users/zipball/e0d8754264254488e40dd4934d922f103e1992f0",
-                "reference": "e0d8754264254488e40dd4934d922f103e1992f0",
+                "url": "https://api.github.com/repos/funayaki/users/zipball/fb95ab9835398ba5eb4192cc52433150c40dd6bc",
+                "reference": "fb95ab9835398ba5eb4192cc52433150c40dd6bc",
                 "shasum": ""
             },
             "require": {
@@ -930,7 +930,7 @@
                 "source": "https://github.com/funayaki/users/tree/master",
                 "issues": "https://github.com/funayaki/users/issues"
             },
-            "time": "2018-05-28T06:57:40+00:00"
+            "time": "2018-05-29T08:02:24+00:00"
         },
         {
             "name": "gourmet/knp-menu",
@@ -2008,16 +2008,16 @@
         },
         {
             "name": "zendframework/zend-diactoros",
-            "version": "1.7.1",
+            "version": "1.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-diactoros.git",
-                "reference": "bf26aff803a11c5cc8eb7c4878a702c403ec67f1"
+                "reference": "741e7a571836f038de731105f4742ca8a164e43a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/bf26aff803a11c5cc8eb7c4878a702c403ec67f1",
-                "reference": "bf26aff803a11c5cc8eb7c4878a702c403ec67f1",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/741e7a571836f038de731105f4742ca8a164e43a",
+                "reference": "741e7a571836f038de731105f4742ca8a164e43a",
                 "shasum": ""
             },
             "require": {
@@ -2037,7 +2037,8 @@
             "extra": {
                 "branch-alias": {
                     "dev-master": "1.7.x-dev",
-                    "dev-develop": "1.8.x-dev"
+                    "dev-develop": "1.8.x-dev",
+                    "dev-release-2.0": "2.0.x-dev"
                 }
             },
             "autoload": {
@@ -2056,7 +2057,7 @@
                 "psr",
                 "psr-7"
             ],
-            "time": "2018-02-26T15:44:50+00:00"
+            "time": "2018-05-29T16:53:08+00:00"
         }
     ],
     "packages-dev": [
@@ -2995,25 +2996,28 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.7.0",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "3b8a3a99ba1f6a3952ac2747d989303cbd6b7a3e"
+                "reference": "478465659fd987669df0bd8a9bf22a8710e5f1b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/3b8a3a99ba1f6a3952ac2747d989303cbd6b7a3e",
-                "reference": "3b8a3a99ba1f6a3952ac2747d989303cbd6b7a3e",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/478465659fd987669df0bd8a9bf22a8710e5f1b6",
+                "reference": "478465659fd987669df0bd8a9bf22a8710e5f1b6",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.6 || ^7.0"
+                "php": "^7.1"
+            },
+            "replace": {
+                "myclabs/deep-copy": "self.version"
             },
             "require-dev": {
                 "doctrine/collections": "^1.0",
                 "doctrine/common": "^2.6",
-                "phpunit/phpunit": "^4.1"
+                "phpunit/phpunit": "^7.1"
             },
             "type": "library",
             "autoload": {
@@ -3036,7 +3040,7 @@
                 "object",
                 "object graph"
             ],
-            "time": "2017-10-19T19:58:43+00:00"
+            "time": "2018-05-29T17:25:09+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -3741,16 +3745,16 @@
         },
         {
             "name": "phpunit/phpunit-mock-objects",
-            "version": "5.0.6",
+            "version": "5.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "33fd41a76e746b8fa96d00b49a23dadfa8334cdf"
+                "reference": "3eaf040f20154d27d6da59ca2c6e28ac8fd56dce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/33fd41a76e746b8fa96d00b49a23dadfa8334cdf",
-                "reference": "33fd41a76e746b8fa96d00b49a23dadfa8334cdf",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/3eaf040f20154d27d6da59ca2c6e28ac8fd56dce",
+                "reference": "3eaf040f20154d27d6da59ca2c6e28ac8fd56dce",
                 "shasum": ""
             },
             "require": {
@@ -3796,7 +3800,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2018-01-06T05:45:45+00:00"
+            "time": "2018-05-29T13:50:43+00:00"
         },
         {
             "name": "psy/psysh",
@@ -5103,7 +5107,7 @@
     "stability-flags": {
         "funayaki/acl-manager": 20,
         "funayaki/adminlte": 20,
-        "funayaki/attachments": 20,
+        "funayaki/assets": 20,
         "funayaki/bootstrap-ui": 20,
         "funayaki/cakephp-adminlte-theme": 20,
         "funayaki/settings": 20,

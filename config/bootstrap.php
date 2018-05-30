@@ -226,13 +226,11 @@ Plugin::load('AclManager', ['bootstrap' => true, 'routes' => true, 'autoload' =>
 
 Plugin::load('AdminLTE');
 
-Plugin::load('Attachments', ['bootstrap' => true, 'routes' => true, 'autoload' => true]);
+Plugin::load('Assets', ['bootstrap' => true, 'routes' => true, 'autoload' => true]);
 
 Plugin::load('BootstrapUI');
 
 Plugin::load('Cirici/AdminLTE', ['bootstrap' => true]);
-
-Plugin::load('Josegonzalez/Upload');
 
 Plugin::load('Settings', ['bootstrap' => true, 'routes' => true, 'autoload' => true]);
 

@@ -11,7 +11,7 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/funayaki/attachments"
+            "url": "https://github.com/funayaki/assets"
         },
         {
             "type": "vcs",
@@ -49,7 +49,7 @@
         "friendsofcake/search": "^4.3",
         "funayaki/acl-manager": "dev-master",
         "funayaki/adminlte": "dev-feature",
-        "funayaki/attachments": "dev-master",
+        "funayaki/assets": "dev-master",
         "funayaki/bootstrap-ui": "dev-adminlte",
         "funayaki/cakephp-adminlte-theme": "dev-funayaki",
         "funayaki/settings": "dev-master",

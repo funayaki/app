@@ -8,17 +8,17 @@ Taxonomy:
       attributes:
         icon: circle-o
 
-Attachments:
+Assets:
   uri: '#'
   attributes:
     icon: file
   children:
-    Attachments:
-      uri: /admin/attachments/attachments
+    Assets:
+      uri: /admin/assets/assets
       attributes:
         icon: circle-o
-    Add attachment:
-      uri: /admin/attachments/attachments/add
+    Add asset:
+      uri: /admin/assets/assets/add
       attributes:
         icon: circle-o
 
