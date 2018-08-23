@@ -75,6 +75,8 @@ class AppController extends Controller
          */
         $this->loadComponent('Security');
         $this->loadComponent('Csrf');
+        
+        $this->viewBuilder()->setTheme('Cirici/AdminLTE');
     }
 
     /**
@@ -83,8 +85,6 @@ class AppController extends Controller
      */
     public function beforeRender(Event $event)
     {
-        $this->viewBuilder()->setTheme('Cirici/AdminLTE');
-
         // Set logged in user info to viewVars
         $currentUser = $this->_getCurrentUser();
         if ($currentUser) {
