@@ -53,7 +53,6 @@ class AppController extends Controller
                 'action' => 'index',
                 'plugin' => null
             ],
-            'authError' => 'You are not authorized to access that location.',
             'authenticate' => [
                 AuthComponent::ALL => [
                     'userModel' => 'Users.Users',
